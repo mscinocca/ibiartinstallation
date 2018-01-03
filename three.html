@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				color: #ffffff;
+				font-family:Monospace;
+				font-size:13px;
+				text-align:center;
+				font-weight: bold;
+				background-color: #000000;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			#info {
+				position: absolute;
+				top: 0px; width: 100%;
+				padding: 5px;
+			}
+
+			a {
+				color: #ffffff;
+			}
+		</style>
+
+		<script src="js/three.js"></script>
+		<script src="js/threesketch.js"></script>
+		<script src='js/stats.js'></script>
+		<script src='js/jquery-3.2.1.min.js'></script>
+	</head>
+
+	<body onload="runSketch()">
+		<div id="container"></div>
+		<script id="vertexShader" type="x-shader/x-vertex">
+			varying vec2 vUv;
+
+			void main()	{
+
+				vUv = uv;
+				gl_Position = vec4( position, 1.0 );
+			}
+		</script>
+
+		<script id="fragmentShader" type="x-shader/x-fragment">
+
+			varying vec2 vUv;
+			uniform float time;
+
+			uniform sampler2D texture;
+
+			highp float rand(vec2 co)
+			{
+				 co.x = co.x * time;
+				 co.y = co.y * time;
+
+				 highp float a = 12.9898;
+				 highp float b = 78.233;
+				 highp float c = 43758.5453;
+				 highp float dt = dot(co.xy, vec2(a, b));
+				 highp float sn = mod(dt, 3.14);
+
+				 return fract(sin(sn) * c);
+			}
+
+			float randFloat(vec2 co, float min, float max) {
+
+				return (rand(co) * (max - min) + min);
+			}
+
+			void main()	{
+
+				/*
+				vec2 p = - 1.0 + 2.0 * vUv;
+				float a = time * 40.0;
+				float d, e, f, g = 1.0 / 40.0 ,h ,i ,r ,q;
+				e = 400.0 * ( p.x * 0.5 + 0.5 );
+				f = 400.0 * ( p.y * 0.5 + 0.5 );
+				i = 200.0 + sin( e * g + a / 150.0 ) * 20.0;
+				d = 200.0 + cos( f * g / 2.0 ) * 18.0 + cos( e * g ) * 7.0;
+				r = sqrt( pow( abs( i - e ), 2.0 ) + pow( abs( d - f ), 2.0 ) );
+				q = f / r;
+				e = ( r * cos( q ) ) - a / 2.0;
+				f = ( r * sin( q ) ) - a / 2.0;
+				d = sin( e * g ) * 176.0 + sin( e * g ) * 164.0 + r;
+				h = ( ( f + d ) + a / 2.0 ) * g;
+				i = cos( h + r * p.x / 1.3 ) * ( e + e + a ) + cos( q * g * 6.0 ) * ( r + h / 3.0 );
+				h = sin( f * g ) * 144.0 - sin( e * g ) * 212.0 * p.x;
+				h = ( h + ( f - e ) * q + sin( r - ( a + h ) / 7.0 ) * 10.0 + i / 4.0 ) * g;
+				i += cos( h * 2.3 * sin( a / 350.0 - q ) ) * 184.0 * sin( q - ( r * 4.3 + a / 12.0 ) * g ) + tan( r * g + h ) * 184.0 * cos( r * g + h );
+				i = mod( i / 5.6, 256.0 ) / 64.0;
+				if ( i < 0.0 ) i += 4.0;
+				if ( i >= 2.0 ) i = 4.0 - i;
+				d = r / 350.0;
+				d += sin( d * d * 8.0 ) * 0.52;
+				f = ( sin( a * g ) + 1.0 ) / 2.0;
+				gl_FragColor = vec4( vec3( f * i / 1.6, i / 2.0 + d / 13.0, i ) * d * p.x + vec3( i / 1.3 + d / 8.0, i / 2.0 + d / 18.0, i ) * d * ( 1.0 - p.x ), 1.0 );
+				*/
+			
+				float tailLength = 200.0;
+
+				float lineWidth = 16.0;
+
+				vec2 position = vec2(vUv.x, vUv.y);
+
+				gl_FragColor = texture2D(texture, position);
+				
+				if(gl_FragColor.a < 0.5) {
+					gl_FragColor.rb = vUv.xy;
+					gl_FragColor.a = 0.3;
+				}
+
+				const float boxSize = 1.0;
+
+ 				for(float x = -boxSize; x <= boxSize; x += 1.0) {
+					for(float y = -boxSize; y <= boxSize; y += 1.0) {
+						if(x != 0.0 && y != 0.0) {
+							vec2 coord = vec2(vUv.x + (x / (1920.0 / 4.0)), vUv.y + (y / (1080.0 / 4.0)));
+
+							vec4 colorCheck = texture2D(texture, coord);
+
+							if(colorCheck.a > 0.7) {
+								//gl_FragColor.a = colorCheck.a;
+								//gl_FragColor.a = 4.0 / sqrt(x*x + y*y);
+							}
+						}
+					}
+				}
+
+				/*
+				if(gl_FragColor.a > 0.25) {
+					gl_FragColor.a = gl_FragColor.a * 1.2;
+				}
+				*/
+			}
+		</script>
+	</body>
+</html>

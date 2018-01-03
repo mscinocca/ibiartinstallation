@@ -1,0 +1,328 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "UTF-8"
+  },
+  "kml": {
+    "@xmlns": "http://www.opengis.net/kml/2.2",
+    "@xmlns:gx": "http://www.google.com/kml/ext/2.2",
+    "Document": {
+      "name": " Location history from 2017-12-11 to 2017-12-11 ",
+      "open": "1",
+      "description": "",
+      "StyleMap": {
+        "@id": "multiTrack",
+        "Pair": [
+          {
+            "key": "normal",
+            "styleUrl": "#multiTrack_n"
+          },
+          {
+            "key": "highlight",
+            "styleUrl": "#multiTrack_h"
+          }
+        ]
+      },
+      "Style": [
+        {
+          "@id": "multiTrack_n",
+          "IconStyle": {
+            "Icon": {
+              "href": "https://earth.google.com/images/kml-icons/track-directional/track-0.png"
+            }
+          },
+          "LineStyle": {
+            "color": "99ffac59",
+            "width": "6"
+          }
+        },
+        {
+          "@id": "multiTrack_h",
+          "IconStyle": {
+            "scale": "1.2",
+            "Icon": {
+              "href": "https://earth.google.com/images/kml-icons/track-directional/track-0.png"
+            }
+          },
+          "LineStyle": {
+            "color": "99ffac59",
+            "width": "8"
+          }
+        }
+      ],
+      "Placemark": [
+        {
+          "name": "43° 42' 41.5897\" N, 79° 16' 2.0161\" W",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "bodunrin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2017-12-10T03:00:02.540Z to 2017-12-11T13:55:32.649Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.2672267 43.7115527 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-12-10T03:00:02.540Z",
+            "end": "2017-12-11T13:55:32.649Z"
+          }
+        },
+        {
+          "name": "Motorcycling",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "bodunrin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Motorcycling"
+              },
+              {
+                "@name": "Distance",
+                "value": "11132"
+              }
+            ]
+          },
+          "description": " Motorcycling from 2017-12-11T13:55:32.649Z to 2017-12-11T14:36:54.725Z. Distance 11132m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.2672267 43.7115527 0",
+              "-79.2672267 43.7115527 0",
+              "-79.26714 43.7119223 0",
+              "-79.271354 43.714339 0",
+              "-79.2715864 43.7143592 0",
+              "-79.3607302 43.688651 0",
+              "-79.3966658 43.6874717 0",
+              "-79.3965933188782 43.68718628124433 0",
+              "-79.3965933188782 43.68718628124433 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-11T13:55:32.649Z",
+            "end": "2017-12-11T14:36:54.725Z"
+          }
+        },
+        {
+          "name": "Work",
+          "address": "55 St Clair Ave W, Toronto, ON M4V 1N5",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "bodunrin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2017-12-11T14:36:54.725Z to 2017-12-11T22:37:46.231Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.39665169999999 43.6872261 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-12-11T14:36:54.725Z",
+            "end": "2017-12-11T22:37:46.231Z"
+          }
+        },
+        {
+          "name": "On the subway",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "bodunrin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "On the subway"
+              },
+              {
+                "@name": "Distance",
+                "value": "9892"
+              }
+            ]
+          },
+          "description": " On the subway from 2017-12-11T22:37:46.231Z to 2017-12-11T23:19:03.000Z. Distance 9892m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3965933188782 43.68718628124433 0",
+              "-79.3965933188782 43.68718628124433 0",
+              "-79.3959663 43.6876989 0",
+              "-79.3933952 43.688251 0",
+              "-79.3937259 43.6882129 0",
+              "-79.2797694 43.7112083 0",
+              "-79.2790596 43.711441799999996 0",
+              "-79.2790596 43.711441799999996 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-11T22:37:46.231Z",
+            "end": "2017-12-11T23:19:03.000Z"
+          }
+        },
+        {
+          "name": "Warden Station",
+          "address": "Toronto, ON M1L 3Z5",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "bodunrin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Subway Station"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Subway Station from 2017-12-11T23:19:03.000Z to 2017-12-11T23:37:57.640Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.2790596 43.711441799999996 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-12-11T23:19:03.000Z",
+            "end": "2017-12-11T23:37:57.640Z"
+          }
+        },
+        {
+          "name": "Walking",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "bodunrin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Walking"
+              },
+              {
+                "@name": "Distance",
+                "value": "1049"
+              }
+            ]
+          },
+          "description": " Walking from 2017-12-11T23:37:57.640Z to 2017-12-11T23:55:44.329Z. Distance 1049m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.2790596 43.711441799999996 0",
+              "-79.2790596 43.711441799999996 0",
+              "-79.2796495 43.7112901 0",
+              "-79.2680856 43.7114669 0",
+              "-79.2672267 43.7115527 0",
+              "-79.2672267 43.7115527 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-11T23:37:57.640Z",
+            "end": "2017-12-11T23:55:44.329Z"
+          }
+        },
+        {
+          "name": "43° 42' 41.5897\" N, 79° 16' 2.0161\" W",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "bodunrin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2017-12-11T23:55:44.329Z to 2017-12-12T20:20:31.526Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.2672267 43.7115527 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-12-11T23:55:44.329Z",
+            "end": "2017-12-12T20:20:31.526Z"
+          }
+        }
+      ]
+    }
+  }
+}

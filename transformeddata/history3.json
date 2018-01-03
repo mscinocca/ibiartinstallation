@@ -1,0 +1,274 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "UTF-8"
+  },
+  "kml": {
+    "@xmlns": "http://www.opengis.net/kml/2.2",
+    "@xmlns:gx": "http://www.google.com/kml/ext/2.2",
+    "Document": {
+      "name": " Location history from 2017-11-15 to 2017-11-15 ",
+      "open": "1",
+      "description": "",
+      "StyleMap": {
+        "@id": "multiTrack",
+        "Pair": [
+          {
+            "key": "normal",
+            "styleUrl": "#multiTrack_n"
+          },
+          {
+            "key": "highlight",
+            "styleUrl": "#multiTrack_h"
+          }
+        ]
+      },
+      "Style": [
+        {
+          "@id": "multiTrack_n",
+          "IconStyle": {
+            "Icon": {
+              "href": "https://earth.google.com/images/kml-icons/track-directional/track-0.png"
+            }
+          },
+          "LineStyle": {
+            "color": "99ffac59",
+            "width": "6"
+          }
+        },
+        {
+          "@id": "multiTrack_h",
+          "IconStyle": {
+            "scale": "1.2",
+            "Icon": {
+              "href": "https://earth.google.com/images/kml-icons/track-directional/track-0.png"
+            }
+          },
+          "LineStyle": {
+            "color": "99ffac59",
+            "width": "8"
+          }
+        }
+      ],
+      "Placemark": [
+        {
+          "name": "xx",
+          "address": "33 Rosehill Ave, Toronto, ON M4T 1G6",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "gmail"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2017-11-14T23:09:04.882Z to 2017-11-15T14:42:06.563Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3910105 43.6864823 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-11-14T23:09:04.882Z",
+            "end": "2017-11-15T14:42:06.563Z"
+          }
+        },
+        {
+          "name": "Walking",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "gmail"
+              },
+              {
+                "@name": "Category",
+                "value": "Walking"
+              },
+              {
+                "@name": "Distance",
+                "value": "649"
+              }
+            ]
+          },
+          "description": " Walking from 2017-11-15T14:42:06.563Z to 2017-11-15T14:59:47.131Z. Distance 649m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3910105 43.6864823 0",
+              "-79.3910105 43.6864823 0",
+              "-79.3909593 43.6864111 0",
+              "-79.3930861 43.6862299 0",
+              "-79.3935527 43.6868011 0",
+              "-79.3938397 43.6875149 0",
+              "-79.3948689 43.6878825 0",
+              "-79.396007 43.6875106 0",
+              "-79.3966176 43.6874914 0",
+              "-79.3966099 43.687392 0",
+              "-79.3968332 43.6870786 0",
+              "-79.3969388 43.6870489 0",
+              "-79.3968311 43.6870967 0",
+              "-79.39682436743993 43.68709991725101 0",
+              "-79.39682436743993 43.68709991725101 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-11-15T14:42:06.563Z",
+            "end": "2017-11-15T14:59:47.131Z"
+          }
+        },
+        {
+          "name": "Work",
+          "address": "55 St Clair Ave W, Toronto, ON M4V 1N5",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "email"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2017-11-15T14:59:47.131Z to 2017-11-15T23:27:02.179Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.39665169999999 43.6872261 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-11-15T14:59:47.131Z",
+            "end": "2017-11-15T23:27:02.179Z"
+          }
+        },
+        {
+          "name": "Walking",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "gmail"
+              },
+              {
+                "@name": "Category",
+                "value": "Walking"
+              },
+              {
+                "@name": "Distance",
+                "value": "776"
+              }
+            ]
+          },
+          "description": " Walking from 2017-11-15T23:27:02.179Z to 2017-11-15T23:41:26.478Z. Distance 776m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.39682436743993 43.68709991725101 0",
+              "-79.39682436743993 43.68709991725101 0",
+              "-79.3968217 43.6870934 0",
+              "-79.3968349 43.6870873 0",
+              "-79.3965257 43.6872922 0",
+              "-79.397004 43.6874058 0",
+              "-79.3971199 43.6873937 0",
+              "-79.3972039 43.6873961 0",
+              "-79.3960768 43.6877711 0",
+              "-79.3958421 43.6876241 0",
+              "-79.3956248 43.6877021 0",
+              "-79.3954552 43.6877793 0",
+              "-79.395311 43.6879204 0",
+              "-79.3949745 43.688104 0",
+              "-79.3945006 43.6882052 0",
+              "-79.3941596 43.6882026 0",
+              "-79.3939844 43.6881554 0",
+              "-79.3939248 43.6878397 0",
+              "-79.3940065 43.6877065 0",
+              "-79.3938946 43.6874735 0",
+              "-79.393636 43.6872691 0",
+              "-79.3932821 43.6871573 0",
+              "-79.3921619 43.6875284 0",
+              "-79.3910105 43.6864823 0",
+              "-79.3910105 43.6864823 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-11-15T23:27:02.179Z",
+            "end": "2017-11-15T23:41:26.478Z"
+          }
+        },
+        {
+          "name": "xx",
+          "address": "33 Rosehill Ave, Toronto, ON M4T 1G6",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "gmail"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2017-11-15T23:41:26.478Z to 2017-11-16T13:01:05.255Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3910105 43.6864823 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-11-15T23:41:26.478Z",
+            "end": "2017-11-16T13:01:05.255Z"
+          }
+        }
+      ]
+    }
+  }
+}
