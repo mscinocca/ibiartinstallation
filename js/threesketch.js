@@ -64,8 +64,8 @@ function init() {
   var ibiX = Math.floor(getXPosition(-79.396541));
   var ibiY = Math.floor(getYPosition(43.687253));
 
-  for(var x = ibiX - 2; x < ibiX + 2; x++) {
-    for(var y = ibiY - 2; y < ibiY + 2; y++) {
+  for(var x = ibiX - 10; x < ibiX + 10; x++) {
+    for(var y = ibiY - 10; y < ibiY + 10; y++) {
       bumpAlphaColor(x, y, 255, 0, 255, 50);
     }
   }
@@ -116,6 +116,18 @@ function init() {
 
       trip.currentPlaceMark = 0;
       trip.currentCoord = 0;
+
+      trip.deltaX = 0;
+      trip.deltaY = 0;
+
+      trip.xPos = 0;
+      trip.yPos = 0;
+
+      trip.moveDeltaX = 0;
+      trip.moveDeltaY = 0;
+
+      trip.movedDeltaX = 0.0;
+      trip.movedDeltaY = 0.0;
 
       trips.push(trip);
 
@@ -183,64 +195,77 @@ function animate( timestamp ) {
     deltaTime += timestamp / 1000;
   }
 
+  var timeSpeed = 10.0;
+
   for(var i = 0; i < trips.length; i++) {
-    if(deltaTime >= 100.0 || (trips[i] != null && trips[i].currentPlaceMark == 0 && trips[i].currentCoord == 0)) {
+    if(deltaTime >= timeSpeed || (trips[i] != null && trips[i].currentPlaceMark == 0 && trips[i].currentCoord == 0)) {
       if(trips[i] != null) {
         if(trips[i].currentPlaceMark < trips[i].kml.Document.Placemark.length) {
           if(!Array.isArray(trips[i].kml.Document.Placemark[trips[i].currentPlaceMark]['gx:Track']['gx:coord'])) {
             trips[i].currentPlaceMark++;
           } else {
             if(trips[i].currentCoord < trips[i].kml.Document.Placemark[trips[i].currentPlaceMark]['gx:Track']['gx:coord'].length - 1) {
-              var coord = trips[i].kml.Document.Placemark[trips[i].currentPlaceMark]['gx:Track']['gx:coord'][trips[i].currentCoord].split(" ");
               
-              var coordNext = trips[i].kml.Document.Placemark[trips[i].currentPlaceMark]['gx:Track']['gx:coord'][trips[i].currentCoord + 1].split(" ");
+              if(trips[i].xPos == 0 && trips[i].yPos == 0) {
+                var coord = trips[i].kml.Document.Placemark[trips[i].currentPlaceMark]['gx:Track']['gx:coord'][trips[i].currentCoord].split(" ");
+                
+                var coordNext = trips[i].kml.Document.Placemark[trips[i].currentPlaceMark]['gx:Track']['gx:coord'][trips[i].currentCoord + 1].split(" ");
 
-              var x = Math.floor(getXPosition(parseFloat(coord[0])));
-              var y = Math.floor(getYPosition(parseFloat(coord[1])));
+                var x = Math.floor(getXPosition(parseFloat(coord[0])));
+                var y = Math.floor(getYPosition(parseFloat(coord[1])));
 
-              var xNext = Math.floor(getXPosition(parseFloat(coordNext[0])));
-              var yNext = Math.floor(getYPosition(parseFloat(coordNext[1])));
+                var xNext = Math.floor(getXPosition(parseFloat(coordNext[0])));
+                var yNext = Math.floor(getYPosition(parseFloat(coordNext[1])));
 
-              var deltaX = xNext - x;
-              var deltaY = yNext - y;
 
-              var xPos = x;
-              var yPos = y;
+                trips[i].deltaX = xNext - x;
+                trips[i].deltaY = yNext - y;
 
-              var deltaLength = Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2));
+                trips[i].xPos = x;
+                trips[i].yPos = y;
 
-              var moveDeltaX = deltaX / deltaLength;
-              var moveDeltaY = deltaY / deltaLength;
+                var deltaLength = Math.sqrt(Math.pow(trips[i].deltaX, 2) + Math.pow(trips[i].deltaY, 2));
 
-              var xDelta = 0.0;
-              var yDelta = 0.0;
+                trips[i].moveDeltaX = trips[i].deltaX / deltaLength;
+                trips[i].moveDeltaY = trips[i].deltaY / deltaLength;
 
-              while(Math.abs(xDelta) < Math.abs(deltaX) && Math.abs(yDelta) < Math.abs(deltaY)) {
-
-                var color = Math.max(128, Math.random() * 255);
-
-                //for(var xx = xPos - 1; xx <= xPos + 1; xx++) {
-                  //for(var yy = yPos - 1; yy <= yPos + 1; yy++) {
-                    if(trips[i].kml.Document.Placemark[trips[i].currentPlaceMark].name == 'Walking') {
-                      bumpAlphaColor(xPos, yPos, color, 0, color, 20.0);
-                    } else {
-                      bumpAlphaColor(xPos, yPos, 0, color, color, 20.0);
-                    }  
-                  //}
-                //}
-
-                if(Math.abs(xDelta) < Math.abs(deltaX)) {
-                  xPos += moveDeltaX;
-                  xDelta += moveDeltaX;
-                }
-
-                if(Math.abs(yDelta) < Math.abs(deltaY)) {
-                  yPos += moveDeltaY;
-                  yDelta += moveDeltaY;
-                }
+                trips[i].movedDeltaX = 0.0;
+                trips[i].movedDeltaY = 0.0;
               }
 
-              trips[i].currentCoord++;
+              var color = Math.max(128); //, Math.random() * 255);
+
+              if(Math.abs(trips[i].movedDeltaX) < Math.abs(trips[i].deltaX) && Math.abs(trips[i].movedDeltaY) < Math.abs(trips[i].deltaY)) {
+
+                for(var xx = trips[i].xPos - 1; xx <= trips[i].xPos + 1; xx++) {
+                  for(var yy = trips[i].yPos - 1; yy <= trips[i].yPos + 1; yy++) {
+                    if(trips[i].kml.Document.Placemark[trips[i].currentPlaceMark].name == 'Walking') {
+                      bumpAlphaColor(xx, yy, color, 0, color, 20.0);
+                    } else {
+                      bumpAlphaColor(xx, yy, 0, color, color, 20.0);
+                    }  
+                  }
+                }
+
+                if(Math.abs(trips[i].movedDeltaX) < Math.abs(trips[i].deltaX)) {
+                  trips[i].xPos += trips[i].moveDeltaX;
+                  trips[i].movedDeltaX += trips[i].moveDeltaX;
+                }
+
+                if(Math.abs(trips[i].movedDeltaY) < Math.abs(trips[i].deltaY)) {
+                  trips[i].yPos += trips[i].moveDeltaY;
+                  trips[i].movedDeltaY += trips[i].moveDeltaY;
+                }
+              } else {
+
+                trips[i].currentCoord++;
+
+                trips[i].xPos = 0;
+                trips[i].yPos = 0;
+
+                trips[i].movedDeltaX = 0.0;
+                trips[i].movedDeltaY = 0.0;
+              }
             } else {
               trips[i].currentPlaceMark++;
               trips[i].currentCoord = 0;
@@ -251,7 +276,7 @@ function animate( timestamp ) {
     }
   }
 
-  if(deltaTime >= 100.0) {
+  if(deltaTime >= timeSpeed) {
     deltaTime = 0.0;
   }
 
