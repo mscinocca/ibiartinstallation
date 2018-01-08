@@ -7,7 +7,7 @@
     "@xmlns": "http://www.opengis.net/kml/2.2",
     "@xmlns:gx": "http://www.google.com/kml/ext/2.2",
     "Document": {
-      "name": " Location history from 2017-11-29 to 2017-11-29 ",
+      "name": " Location history from 2017-12-16 to 2017-12-16 ",
       "open": "1",
       "description": "",
       "StyleMap": {
@@ -52,13 +52,13 @@
       ],
       "Placemark": [
         {
-          "name": "674 Crawford St",
-          "address": "Toronto, ON M6G 3K2",
+          "name": "Home",
+          "address": "7 Jackes Ave, Toronto, ON M4T 1E3",
           "ExtendedData": {
             "Data": [
               {
                 "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
+                "value": "melikesolenakin@gmail.com"
               },
               {
                 "@name": "Category",
@@ -70,7 +70,7 @@
               }
             ]
           },
-          "description": "  from 2017-11-28T23:08:30.343Z to 2017-11-29T13:43:26.339Z. Distance 0m ",
+          "description": "  from 2017-12-16T03:32:25.224Z to 2017-12-16T14:35:12.171Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -79,21 +79,484 @@
               "@xmlns": "http://www.opengis.net/kml/2.2",
               "#text": "clampToGround"
             },
-            "gx:coord": "-79.4216381 43.6614613 0"
+            "gx:coord": "-79.3916563 43.6847358 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-28T23:08:30.343Z",
-            "end": "2017-11-29T13:43:26.339Z"
+            "begin": "2017-12-16T03:32:25.224Z",
+            "end": "2017-12-16T14:35:12.171Z"
           }
         },
         {
-          "name": "Seaton Village",
-          "address": "Toronto, ON",
+          "name": "Driving",
+          "address": "",
           "ExtendedData": {
             "Data": [
               {
                 "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Driving"
+              },
+              {
+                "@name": "Distance",
+                "value": "4934"
+              }
+            ]
+          },
+          "description": " Driving from 2017-12-16T14:35:12.171Z to 2017-12-16T14:48:28.000Z. Distance 4934m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3916563 43.6847358 0",
+              "-79.3916563 43.6847358 0",
+              "-79.3929119 43.6852865 0",
+              "-79.3944681 43.6964381 0",
+              "-79.3824855 43.699035 0",
+              "-79.3730283 43.701147 0",
+              "-79.3678765 43.7065442 0",
+              "-79.3638679 43.7114153 0",
+              "-79.3604466 43.714140799999996 0",
+              "-79.3604466 43.714140799999996 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-16T14:35:12.171Z",
+            "end": "2017-12-16T14:48:28.000Z"
+          }
+        },
+        {
+          "name": "ServiceOntario",
+          "address": "939 Eglinton Ave E Unit 102, Toronto, ON M4G 2L1",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Government Office"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Government Office from 2017-12-16T14:48:28.000Z to 2017-12-16T15:12:50.000Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3604466 43.714140799999996 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-12-16T14:48:28.000Z",
+            "end": "2017-12-16T15:12:50.000Z"
+          }
+        },
+        {
+          "name": "Driving",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Driving"
+              },
+              {
+                "@name": "Distance",
+                "value": "4685"
+              }
+            ]
+          },
+          "description": " Driving from 2017-12-16T15:12:50.998Z to 2017-12-16T15:23:37.000Z. Distance 4685m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3604466 43.714140799999996 0",
+              "-79.3598238 43.7139163 0",
+              "-79.3638543 43.713863 0",
+              "-79.3739514 43.7168662 0",
+              "-79.3792397 43.7229444 0",
+              "-79.388284 43.7281286 0",
+              "-79.3981798 43.7259581 0",
+              "-79.403938 43.7325993 0",
+              "-79.403938 43.7325993 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-16T15:12:50.998Z",
+            "end": "2017-12-16T15:23:37.000Z"
+          }
+        },
+        {
+          "name": "Hazel's Diner",
+          "address": "3401 Yonge St, North York, ON M4N 2M8",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Diner"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Diner from 2017-12-16T15:23:37.000Z to 2017-12-16T16:53:11.000Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.403938 43.7325993 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-12-16T15:23:37.000Z",
+            "end": "2017-12-16T16:53:11.000Z"
+          }
+        },
+        {
+          "name": "Driving",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Driving"
+              },
+              {
+                "@name": "Distance",
+                "value": "19971"
+              }
+            ]
+          },
+          "description": " Driving from 2017-12-16T16:53:11.479Z to 2017-12-16T17:16:22.175Z. Distance 19971m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.403938 43.7325993 0",
+              "-79.4040534 43.7325476 0",
+              "-79.4063869 43.7427296 0",
+              "-79.4207885 43.7442404 0",
+              "-79.5304628 43.7552305 0",
+              "-79.5439975 43.8117495 0",
+              "-79.5474577 43.8086846 0",
+              "-79.5426991 43.7934183 0",
+              "-79.5440108 43.7919674 0",
+              "-79.5440108 43.7919674 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-16T16:53:11.479Z",
+            "end": "2017-12-16T17:16:22.175Z"
+          }
+        },
+        {
+          "name": "7/400 Power Centre",
+          "address": "101 Northview Blvd, Vaughan, ON L4L 8T2",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Shopping Mall"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Shopping Mall from 2017-12-16T17:16:22.175Z to 2017-12-16T18:34:15.000Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.5440108 43.7919674 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-12-16T17:16:22.175Z",
+            "end": "2017-12-16T18:34:15.000Z"
+          }
+        },
+        {
+          "name": "Driving",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Driving"
+              },
+              {
+                "@name": "Distance",
+                "value": "3971"
+              }
+            ]
+          },
+          "description": " Driving from 2017-12-16T18:34:15.000Z to 2017-12-16T18:39:55.500Z. Distance 3971m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.5440108 43.7919674 0",
+              "-79.5440108 43.7919674 0",
+              "-79.5427327 43.7933776 0",
+              "-79.5359168 43.806894 0",
+              "-79.5391099 43.8215157 0",
+              "-79.540505 43.8245924 0",
+              "-79.53859 43.825424 0",
+              "-79.53859 43.825424 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-16T18:34:15.000Z",
+            "end": "2017-12-16T18:39:55.500Z"
+          }
+        },
+        {
+          "name": "Vaughan Mills",
+          "address": "1 Bass Pro Mills Dr, Concord, ON L4K 5W4",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Shopping Mall"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Shopping Mall from 2017-12-16T18:39:55.500Z to 2017-12-16T20:44:07.822Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.53859 43.825424 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-12-16T18:39:55.500Z",
+            "end": "2017-12-16T20:44:07.822Z"
+          }
+        },
+        {
+          "name": "Driving",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Driving"
+              },
+              {
+                "@name": "Distance",
+                "value": "21587"
+              }
+            ]
+          },
+          "description": " Driving from 2017-12-16T20:44:07.822Z to 2017-12-16T21:43:01.933Z. Distance 21587m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.53859 43.825424 0",
+              "-79.53859 43.825424 0",
+              "-79.536952 43.8250865 0",
+              "-79.5386151 43.8256783 0",
+              "-79.5383817 43.8252401 0",
+              "-79.5407883 43.8245753 0",
+              "-79.5399301 43.8235302 0",
+              "-79.5446416 43.82087 0",
+              "-79.5409392 43.7970068 0",
+              "-79.5314993 43.7573444 0",
+              "-79.5239457 43.7252338 0",
+              "-79.4973328 43.7073873 0",
+              "-79.4874882 43.69671 0",
+              "-79.4864861 43.6950888 0",
+              "-79.485573 43.694274 0",
+              "-79.4732664 43.6905709 0",
+              "-79.4671644 43.6918222 0",
+              "-79.4539212 43.6948459 0",
+              "-79.4477157 43.689281 0",
+              "-79.446103 43.6854655 0",
+              "-79.4403522 43.6799504 0",
+              "-79.4425698 43.6782337 0",
+              "-79.4421909 43.678424899999996 0",
+              "-79.4421909 43.678424899999996 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-16T20:44:07.822Z",
+            "end": "2017-12-16T21:43:01.933Z"
+          }
+        },
+        {
+          "name": "Big Slice Restaurant",
+          "address": "1154 St Clair Ave W, Toronto, ON M6E 1B3",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Italian"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Italian from 2017-12-16T21:43:01.933Z to 2017-12-16T21:48:18.985Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.4421909 43.678424899999996 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-12-16T21:43:01.933Z",
+            "end": "2017-12-16T21:48:18.985Z"
+          }
+        },
+        {
+          "name": "On a tram",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "On a tram"
+              },
+              {
+                "@name": "Distance",
+                "value": "4458"
+              }
+            ]
+          },
+          "description": " On a tram from 2017-12-16T21:48:18.985Z to 2017-12-16T22:05:01.219Z. Distance 4458m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.4421909 43.678424899999996 0",
+              "-79.4421909 43.678424899999996 0",
+              "-79.4426195 43.6781692 0",
+              "-79.4313669 43.6787059 0",
+              "-79.4213471 43.6824643 0",
+              "-79.4162182 43.6835717 0",
+              "-79.4036959 43.6862199 0",
+              "-79.3963406 43.6875821 0",
+              "-79.3920053 43.6846338 0",
+              "-79.3916563 43.6847358 0",
+              "-79.3916563 43.6847358 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-16T21:48:18.985Z",
+            "end": "2017-12-16T22:05:01.219Z"
+          }
+        },
+        {
+          "name": "Home",
+          "address": "7 Jackes Ave, Toronto, ON M4T 1E3",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
               },
               {
                 "@name": "Category",
@@ -105,7 +568,7 @@
               }
             ]
           },
-          "description": "  from 2017-11-29T13:44:02.950Z to 2017-11-29T13:56:47.043Z. Distance 0m ",
+          "description": "  from 2017-12-16T22:05:01.219Z to 2017-12-17T19:22:08.389Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -114,518 +577,11 @@
               "@xmlns": "http://www.opengis.net/kml/2.2",
               "#text": "clampToGround"
             },
-            "gx:coord": "-79.4169356 43.669017 0"
+            "gx:coord": "-79.3916563 43.6847358 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-29T13:44:02.950Z",
-            "end": "2017-11-29T13:56:47.043Z"
-          }
-        },
-        {
-          "name": "On the subway",
-          "address": "",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "On the subway"
-              },
-              {
-                "@name": "Distance",
-                "value": "4972"
-              }
-            ]
-          },
-          "description": " On the subway from 2017-11-29T13:56:47.043Z to 2017-11-29T14:09:43.624Z. Distance 4972m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": [
-              "-79.41905782589268 43.66327596737286 0",
-              "-79.41905782589268 43.66327596737286 0",
-              "-79.4188224 43.6637663 0",
-              "-79.4037046 43.6673914 0",
-              "-79.3850298 43.6705128 0",
-              "-79.3964744 43.6871467 0",
-              "-79.3967758 43.6872312 0",
-              "-79.3967758 43.6872312 0"
-            ]
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T13:56:47.043Z",
-            "end": "2017-11-29T14:09:43.624Z"
-          }
-        },
-        {
-          "name": "IBI Group",
-          "address": "55 St Clair Ave W #700, Toronto, ON M4V 2Y7",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "Consultant"
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": " Consultant from 2017-11-29T14:09:43.624Z to 2017-11-29T18:03:10.280Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.3967758 43.6872312 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T14:09:43.624Z",
-            "end": "2017-11-29T18:03:10.280Z"
-          }
-        },
-        {
-          "name": "Deer Park",
-          "address": "Toronto, ON",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": ""
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": "  from 2017-11-29T18:03:44.869Z to 2017-11-29T18:09:26.323Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.398642 43.6898373 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T18:03:44.869Z",
-            "end": "2017-11-29T18:09:26.323Z"
-          }
-        },
-        {
-          "name": "On the subway",
-          "address": "",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "On the subway"
-              },
-              {
-                "@name": "Distance",
-                "value": "2677"
-              }
-            ]
-          },
-          "description": " On the subway from 2017-11-29T18:09:26.323Z to 2017-11-29T18:14:53.366Z. Distance 2677m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": [
-              "-79.39365966012534 43.68780729646541 0",
-              "-79.39365966012534 43.68780729646541 0",
-              "-79.3933159 43.6878396 0",
-              "-79.3889057 43.677657 0",
-              "-79.3836971 43.6650582 0",
-              "-79.38369513359633 43.66505279879049 0",
-              "-79.38369513359633 43.66505279879049 0"
-            ]
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T18:09:26.323Z",
-            "end": "2017-11-29T18:14:53.366Z"
-          }
-        },
-        {
-          "name": "Church and Wellesley",
-          "address": "Toronto, ON",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": ""
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": "  from 2017-11-29T18:14:53.366Z to 2017-11-29T18:20:32.688Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.3817523 43.6645421 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T18:14:53.366Z",
-            "end": "2017-11-29T18:20:32.688Z"
-          }
-        },
-        {
-          "name": "Walking",
-          "address": "",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "Walking"
-              },
-              {
-                "@name": "Distance",
-                "value": "2128"
-              }
-            ]
-          },
-          "description": " Walking from 2017-11-29T18:20:32.688Z to 2017-11-29T19:59:21.999Z. Distance 2128m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": [
-              "-79.38369513359633 43.66505279879049 0",
-              "-79.38369513359633 43.66505279879049 0",
-              "-79.3836996 43.665065 0",
-              "-79.3810466 43.6469344 0",
-              "-79.3810751 43.6478292 0",
-              "-79.3810751 43.647829200000004 0",
-              "-79.3810751 43.647829200000004 0"
-            ]
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T18:20:32.688Z",
-            "end": "2017-11-29T19:59:21.999Z"
-          }
-        },
-        {
-          "name": "Financial District",
-          "address": "Toronto, ON",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": ""
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": "  from 2017-11-29T19:59:21.999Z to 2017-11-29T20:06:32.585Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.3817523 43.647934799999994 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T19:59:21.999Z",
-            "end": "2017-11-29T20:06:32.585Z"
-          }
-        },
-        {
-          "name": "On the subway",
-          "address": "",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "On the subway"
-              },
-              {
-                "@name": "Distance",
-                "value": "5151"
-              }
-            ]
-          },
-          "description": " On the subway from 2017-11-29T20:06:32.585Z to 2017-11-29T20:25:50.188Z. Distance 5151m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": [
-              "-79.3810751 43.647829200000004 0",
-              "-79.3810751 43.647829200000004 0",
-              "-79.3812175 43.6471491 0",
-              "-79.3779599 43.6490085 0",
-              "-79.3837389 43.6650789 0",
-              "-79.3950838 43.6879262 0",
-              "-79.3967205 43.6877941 0",
-              "-79.3967758 43.6872312 0",
-              "-79.3967758 43.6872312 0"
-            ]
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T20:06:32.585Z",
-            "end": "2017-11-29T20:25:50.188Z"
-          }
-        },
-        {
-          "name": "IBI Group",
-          "address": "55 St Clair Ave W #700, Toronto, ON M4V 2Y7",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "Consultant"
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": " Consultant from 2017-11-29T20:25:50.188Z to 2017-11-29T23:48:01.664Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.3967758 43.6872312 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T20:25:50.188Z",
-            "end": "2017-11-29T23:48:01.664Z"
-          }
-        },
-        {
-          "name": "On the subway",
-          "address": "",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "On the subway"
-              },
-              {
-                "@name": "Distance",
-                "value": "1077"
-              }
-            ]
-          },
-          "description": " On the subway from 2017-11-29T23:48:01.664Z to 2017-11-29T23:55:06.744Z. Distance 1077m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": [
-              "-79.3967758 43.6872312 0",
-              "-79.3967758 43.6872312 0",
-              "-79.3963572 43.6871144 0",
-              "-79.3931673 43.6881068 0",
-              "-79.3905315 43.6815214 0",
-              "-79.3905315 43.6815214 0"
-            ]
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T23:48:01.664Z",
-            "end": "2017-11-29T23:55:06.744Z"
-          }
-        },
-        {
-          "name": "Moving",
-          "address": "",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "Moving"
-              },
-              {
-                "@name": "Distance",
-                "value": "1306"
-              }
-            ]
-          },
-          "description": " Moving from 2017-11-29T23:55:06.744Z to 2017-11-30T00:00:00.000Z. Distance 1306m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": [
-              "-79.3905315 43.6815214 0",
-              "-79.3924249 43.6698561 0",
-              "-79.3924249 43.6698561 0"
-            ]
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T23:55:06.744Z",
-            "end": "2017-11-30T00:00:00.000Z"
-          }
-        },
-        {
-          "name": "On the subway",
-          "address": "",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "On the subway"
-              },
-              {
-                "@name": "Distance",
-                "value": "2382"
-              }
-            ]
-          },
-          "description": " On the subway from 2017-11-30T00:00:00.000Z to 2017-11-30T00:04:24.663Z. Distance 2382m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": [
-              "-79.3924249 43.6698561 0",
-              "-79.4038233 43.6673665 0",
-              "-79.4199016 43.6632507 0",
-              "-79.41926980449371 43.663392575683126 0",
-              "-79.41926980449371 43.663392575683126 0"
-            ]
-          },
-          "TimeSpan": {
-            "begin": "2017-11-30T00:00:00.000Z",
-            "end": "2017-11-30T00:04:24.663Z"
-          }
-        },
-        {
-          "name": "Christie Pits",
-          "address": "Toronto, ON",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "erin.g.mcdermott@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": ""
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": "  from 2017-11-30T00:04:24.663Z to 2017-11-30T13:39:00.489Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.4239707 43.6661151 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-30T00:04:24.663Z",
-            "end": "2017-11-30T13:39:00.489Z"
+            "begin": "2017-12-16T22:05:01.219Z",
+            "end": "2017-12-17T19:22:08.389Z"
           }
         }
       ]
