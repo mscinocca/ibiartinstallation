@@ -49,6 +49,8 @@
 			varying vec2 vUv;
 			uniform float time;
 			uniform float pathIndex;
+			uniform float xPosition;
+			uniform float yPosition;
 
 			uniform sampler2D texture;
 
@@ -104,9 +106,61 @@
 
 				vec4 textureColor = texture2D(texture, position);
 
+				float spacer = 8.0;
+
+				if(mod(floor(gl_FragCoord.y), spacer) == 0.0 || 
+					mod(floor(gl_FragCoord.y - 1.0), spacer) == 0.0 ||
+					mod(floor(gl_FragCoord.y - 2.0), spacer) == 0.0 ||
+					mod(floor(gl_FragCoord.y + 1.0), spacer) == 0.0 ||
+					mod(floor(gl_FragCoord.y + 2.0), spacer) == 0.0) {
+
+					if(gl_FragCoord.x == xPosition) {
+						gl_FragColor = vec4(0.9, 0.0, 0.0, 1.0);
+					}
+					
+					float tailLength = 700.0;
+
+					if(xPosition - gl_FragCoord.x < tailLength && xPosition - gl_FragCoord.x > 0.0) {
+						vec2 co = vec2(1.0, 1.0);
+
+						float nominalAlpha = 1.0 - (abs(yPosition - tailLength / 2.0 - gl_FragCoord.y) / tailLength);
+
+						gl_FragColor = vec4(
+							randFloat(gl_FragCoord.xy, 0.7, 1.0),
+							randFloat(gl_FragCoord.xy, 0.7, 1.0), 
+							randFloat(gl_FragCoord.xy, 0.7, 1.0),
+							randFloat(vUv, max(0.0, nominalAlpha - 0.1), nominalAlpha));
+					}
+				}
+
+				if(mod(floor(gl_FragCoord.x), spacer) == 0.0 || 
+					mod(floor(gl_FragCoord.x - 1.0), spacer) == 0.0 ||
+					mod(floor(gl_FragCoord.x - 2.0), spacer) == 0.0 ||
+					mod(floor(gl_FragCoord.x + 1.0), spacer) == 0.0 ||
+					mod(floor(gl_FragCoord.x + 2.0), spacer) == 0.0) {
+
+					if(gl_FragCoord.y == yPosition) {
+						gl_FragColor = vec4(0.0, 0.0, 0.9, 1.0);
+					}
+					
+					float tailLength = 700.0;
+
+					if(yPosition - gl_FragCoord.y < tailLength && yPosition - gl_FragCoord.y > 0.0) {
+						vec2 co = vec2(1.0, 1.0);
+
+						float nominalAlpha = 1.0 - (abs(yPosition - tailLength / 2.0 - gl_FragCoord.y) / tailLength);
+
+						gl_FragColor = gl_FragColor + vec4(
+							randFloat(gl_FragCoord.xy, 0.7, 1.2),
+							randFloat(gl_FragCoord.xy, 0.7, 1.2), 
+							randFloat(gl_FragCoord.xy, 0.7, 1.2),
+							randFloat(vUv, max(0.0, nominalAlpha - 0.1), nominalAlpha));
+					}
+				}
+			
 				if(textureColor.r == 0.0) {
-					//gl_FragColor.rb = vUv.xy;
-					//gl_FragColor.a = 0.5;
+					//gl_FragColor.rbg = vec3(1.0, 1.0, 1.0);
+					//gl_FragColor.a = 1.0;
 				} else {
 					if(textureColor.r == 1.0 / 255.0) {
 						gl_FragColor.r = 1.0;
@@ -130,7 +184,7 @@
 				}
 
 				if(textureColor.g > 0.0 && textureColor.g < (pathIndex / 255.0 - 0.5 / 255.0)) {
-					gl_FragColor.a = max(0.2, textureColor.a * 0.2);
+					gl_FragColor.a = max(0.6, textureColor.a * 0.6);
 				}
 			}
 		</script>

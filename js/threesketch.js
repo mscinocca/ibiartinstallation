@@ -83,6 +83,8 @@ function init() {
     texture: { type: 't', value: texture },
     time: { value: 1.0 },
     pathIndex: { value: 0.0 },
+    xPosition: { value: 0 },
+    yPosition: { value: 0 }
   };
 
   var material = new THREE.ShaderMaterial( {
@@ -273,13 +275,13 @@ function animate( timestamp ) {
                 trips[currentTripIndex].color = 1;
                 pointsPerFrame = 1;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'On the subway' || trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'On a tram' || trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Moving') {
-                trips[currentTripIndex].color = 2;
+                trips[currentTripIndex].color = 1;
                 pointsPerFrame = 2;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Motorcycling') {
-                trips[currentTripIndex].color = 3;
+                trips[currentTripIndex].color = 1;
                 pointsPerFrame = 3;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Driving') {
-                trips[currentTripIndex].color = 4;
+                trips[currentTripIndex].color = 1;
                 pointsPerFrame = 3;
               } 
 
@@ -289,9 +291,9 @@ function animate( timestamp ) {
                 if(Math.abs(trips[currentTripIndex].movedDeltaX) < Math.abs(trips[currentTripIndex].deltaX) && Math.abs(trips[currentTripIndex].movedDeltaY) < Math.abs(trips[currentTripIndex].deltaY)) {
 
                   var maxFactor = 1.0;
-                  var minFactor = 0.5;
+                  var minFactor = 0.8;
                 
-                  var boxSize = 2.0;
+                  var boxSize = 4.0;
 
                   for(var xx = trips[currentTripIndex].xPos - boxSize; xx <= trips[currentTripIndex].xPos + boxSize; xx++) {
                     for(var yy = trips[currentTripIndex].yPos - boxSize; yy <= trips[currentTripIndex].yPos + boxSize; yy++) {
@@ -342,6 +344,17 @@ function animate( timestamp ) {
     deltaTime = 0.0;
   }
 
+  uniforms.xPosition.value += 3;
+  uniforms.yPosition.value += 3;
+
+  if(uniforms.xPosition.value > 1920 + 700) {
+    uniforms.xPosition.value = 0;
+  }
+
+  if(uniforms.yPosition.value > 1080 + 700) {
+    uniforms.yPosition.value = 0;
+  }
+  
   texture.needsUpdate = true;
 
   renderer.render( scene, camera );
