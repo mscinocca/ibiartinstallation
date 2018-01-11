@@ -23,6 +23,9 @@ var deltaTime = 0.0;
 
 var currentTripIndex = 0;
 
+var xVector = 1;
+var yVector = 1;
+
 //43.676196, -79.495543
 //43.658360, -79.487967
 //43.678813, -79.474068
@@ -34,7 +37,7 @@ var minLatitude = 43.658360;
 var maxLatitude = 43.676196;
 */
 
-var speedFactor = 8;
+var speedFactor = 1;
 
 function runSketch() {
 
@@ -83,7 +86,7 @@ function init() {
     texture: { type: 't', value: texture },
     time: { value: 1.0 },
     pathIndex: { value: 0.0 },
-    xPosition: { value: 0 },
+    xPosition: { value: 600.0 },
     yPosition: { value: 0 }
   };
 
@@ -344,15 +347,15 @@ function animate( timestamp ) {
     deltaTime = 0.0;
   }
 
-  uniforms.xPosition.value += 3;
-  uniforms.yPosition.value += 3;
+  uniforms.xPosition.value += xVector;
+  uniforms.yPosition.value += yVector;
 
-  if(uniforms.xPosition.value > 1920 + 700) {
-    uniforms.xPosition.value = 0;
+  if(uniforms.xPosition.value > 1920 || uniforms.xPosition.value < 0) {
+    xVector = -xVector;
   }
 
-  if(uniforms.yPosition.value > 1080 + 700) {
-    uniforms.yPosition.value = 0;
+  if(uniforms.yPosition.value > 1080 || uniforms.yPosition.value < 0) {
+    yVector = -yVector;
   }
   
   texture.needsUpdate = true;
