@@ -41,6 +41,9 @@
 
 				vUv = uv;
 				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+				//gl_Position.x = gl_Position.x - sin(gl_Position.y) * 5.0;
+				//gl_Position.y = gl_Position.y - sin(gl_Position.x) * 5.0;
 			}
 		</script>
 
@@ -116,7 +119,7 @@
 
 					float nominalAlpha = 1.0;
 
-					float lineXPosition = xPosition;// - (gl_FragCoord.y - 540.0) / 540.0 * 960.0;
+					float lineXPosition = xPosition;
 
 					if(gl_FragCoord.x < lineXPosition) {
 						nominalAlpha = -1.0 / lineXPosition * abs(lineXPosition - gl_FragCoord.x) + 1.0;
@@ -143,13 +146,7 @@
 
 						float nominalAlpha = 1.0;
 
-						float lineYPosition = yPosition;// - (gl_FragCoord.x - 960.0) / 960.0 * 540.0;
-	
-						if(lineYPosition < 0.0) {
-							//lineYPosition = 1080.0 + lineYPosition;
-						} else if(lineYPosition > 1080.0) {
-							//lineYPosition = lineYPosition - 1080.0;
-						}
+						float lineYPosition = yPosition;
 
 						if(gl_FragCoord.y < lineYPosition) {
 							nominalAlpha = -1.0 / lineYPosition * abs(lineYPosition - gl_FragCoord.y) + 1.0;
@@ -167,7 +164,6 @@
 							1.0,
 							gl_FragColor.a + nominalAlpha);
 				}
-
 
 				if(
 				(mod(floor(gl_FragCoord.x), spacer) == 0.0 || 
@@ -203,7 +199,7 @@
 							gl_FragColor.b = 1.0;
 						}
 
-						gl_FragColor.a = textureColor.a;
+						gl_FragColor.a = gl_FragColor.a * 3.0;
 					}
 
 					if(textureColor.g > 0.0 && textureColor.g < (pathIndex / 255.0 - 0.5 / 255.0)) {

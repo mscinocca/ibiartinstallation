@@ -23,8 +23,8 @@ var deltaTime = 0.0;
 
 var currentTripIndex = 0;
 
-var xVector = 1;
-var yVector = 1;
+var xVector = 0.25;
+var yVector = 0.50;
 
 //43.676196, -79.495543
 //43.658360, -79.487967
@@ -53,9 +53,14 @@ function init() {
 
   scene = new THREE.Scene();
 
-  camera = new THREE.OrthographicCamera( -1, 1, 1, -1, 0, 1 );
+  camera = new THREE.PerspectiveCamera( 10, 1.0, 1, 1000 ); //new THREE.OrthographicCamera( -1, 1, 1, -1, 0, 1 );
+  camera.position.z = 11.0;
 
-  var geometry = new THREE.PlaneBufferGeometry( 2, 2 );
+  camera.lookAt(new THREE.Vector3(0, 0, 0));
+
+  camera.updateProjectionMatrix();
+
+  var geometry = new THREE.PlaneBufferGeometry( 2, 2, 100, 100 );
 
   for(var i = 0; i < programData.length; i++) {
     programData[i] = new Array(height);
@@ -86,8 +91,8 @@ function init() {
     texture: { type: 't', value: texture },
     time: { value: 1.0 },
     pathIndex: { value: 0.0 },
-    xPosition: { value: 600.0 },
-    yPosition: { value: 0 }
+    xPosition: { value: width / 2.0 },
+    yPosition: { value: height / 2.0 }
   };
 
   var material = new THREE.ShaderMaterial( {
@@ -112,10 +117,10 @@ function init() {
 
   stats	= new Stats();
 
-  stats.domElement.style.position	= 'absolute';
-  stats.domElement.style.left	= '0px';
-  stats.domElement.style.bottom	= '0px';
-  document.body.appendChild( stats.domElement );
+  //stats.domElement.style.position	= 'absolute';
+  //stats.domElement.style.left	= '0px';
+  //stats.domElement.style.bottom	= '0px';
+  //document.body.appendChild( stats.domElement );
 
   var loadCount = 0;
   var loadStart = 0;
@@ -278,13 +283,13 @@ function animate( timestamp ) {
                 trips[currentTripIndex].color = 1;
                 pointsPerFrame = 1;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'On the subway' || trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'On a tram' || trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Moving') {
-                trips[currentTripIndex].color = 1;
+                trips[currentTripIndex].color = 2;
                 pointsPerFrame = 2;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Motorcycling') {
-                trips[currentTripIndex].color = 1;
+                trips[currentTripIndex].color = 3;
                 pointsPerFrame = 3;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Driving') {
-                trips[currentTripIndex].color = 1;
+                trips[currentTripIndex].color = 4;
                 pointsPerFrame = 3;
               } 
 
@@ -296,7 +301,7 @@ function animate( timestamp ) {
                   var maxFactor = 1.0;
                   var minFactor = 0.8;
                 
-                  var boxSize = 4.0;
+                  var boxSize = 3.0;
 
                   for(var xx = trips[currentTripIndex].xPos - boxSize; xx <= trips[currentTripIndex].xPos + boxSize; xx++) {
                     for(var yy = trips[currentTripIndex].yPos - boxSize; yy <= trips[currentTripIndex].yPos + boxSize; yy++) {
