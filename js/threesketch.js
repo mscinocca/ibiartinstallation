@@ -13,10 +13,17 @@ var canvasBuffer = 10.0;
 
 var trips = [];
 
+/*
 var minLongitude = -79.582259;
 var maxLongitude = -79.206532;
 var minLatitude = 43.588199;
 var maxLatitude = 43.837695;
+*/
+
+var minLongitude = -79.554406;
+var maxLongitude = -79.358937;
+var minLatitude = 43.632960;
+var maxLatitude = 43.703421;
 
 var lastTimeStamp = 0.0;
 var deltaTime = 0.0;
@@ -25,6 +32,12 @@ var currentTripIndex = 0;
 
 var xVector = 0.25;
 var yVector = 0.50;
+
+var tbgr = 0;
+var tbgg = 0;
+var tbgb = 0;
+
+var bgDelta = 1;
 
 //43.676196, -79.495543
 //43.658360, -79.487967
@@ -92,7 +105,11 @@ function init() {
     time: { value: 1.0 },
     pathIndex: { value: 0.0 },
     xPosition: { value: width / 2.0 },
-    yPosition: { value: height / 2.0 }
+    yPosition: { value: height / 2.0 },
+    bgr: { value: 0.0 },
+    bgg: { value: 0.0 },
+    bgb: { value: 0.0 },
+    bga: { value: 0.0 },
   };
 
   var material = new THREE.ShaderMaterial( {
@@ -123,7 +140,7 @@ function init() {
   //document.body.appendChild( stats.domElement );
 
   var loadCount = 0;
-  var loadStart = 0;
+  var loadStart = 1;
   var loadEnd = 52;
 
   var loadNumber = loadEnd - loadStart + 1;
@@ -134,22 +151,7 @@ function init() {
     $.getJSON(`transformeddata\\history${i}.json`, function(json) {
       var trip = json;
 
-      trip.currentPlaceMark = 0;
-      trip.currentCoord = 0;
-
-      trip.deltaX = 0;
-      trip.deltaY = 0;
-
-      trip.xPos = 0;
-      trip.yPos = 0;
-
-      trip.moveDeltaX = 0;
-      trip.moveDeltaY = 0;
-
-      trip.movedDeltaX = 0.0;
-      trip.movedDeltaY = 0.0;
-
-      trip.color = 0;
+      resetTrip(trip);
 
       trips.push(trip);
 
@@ -158,6 +160,25 @@ function init() {
   }
 
   //while(loadCount < loadNumber) { sleep(1000); }
+}
+
+function resetTrip(trip) {
+  trip.currentPlaceMark = 0;
+  trip.currentCoord = 0;
+
+  trip.deltaX = 0;
+  trip.deltaY = 0;
+
+  trip.xPos = 0;
+  trip.yPos = 0;
+
+  trip.moveDeltaX = 0;
+  trip.moveDeltaY = 0;
+
+  trip.movedDeltaX = 0.0;
+  trip.movedDeltaY = 0.0;
+
+  trip.color = 0;
 }
 
 function sleep (time) {
@@ -171,14 +192,28 @@ function setDataBufferColorA(x, y, color, a) {
   data[i + 3] = a;
 }
 
+/*
 function setDataBufferColorInfo(x, y, color, pathIndex, a) {
   var i = Math.floor(y) * width * bytes + Math.floor(x) * bytes;
 
-  if(a > data[i + 3] || pathIndex > data[i + 1]) {
+  //if(a > data[i + 3] || pathIndex > data[i + 1]) {
     data[i] = color;
     data[i + 1] = pathIndex;
-    data[i + 3] = a;
-  }
+    data[i + 3] += a;
+
+    if(data[i + 3] > 255)
+      data[i + 3] = 255;
+  //}
+}
+*/
+
+function setDataBufferColorInfo(x, y, r, g, b, a) {
+  var i = Math.floor(y) * width * bytes + Math.floor(x) * bytes;
+
+    data[i] = Math.min(255, data[i] + r);
+    data[i + 1] = Math.min(255, data[i + 1] + g);
+    data[i + 2] = Math.min(255, data[i + 2] + b);
+    data[i + 3] = Math.min(255, data[i + 3] + a);
 }
 
 function bumpAlphaColor(x, y, color, aFactor) {
@@ -251,9 +286,15 @@ function animate( timestamp ) {
           } else {
             if(trips[currentTripIndex].currentCoord < trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark]['gx:Track']['gx:coord'].length - 1) {
               
+              var skip = false;
+
               if(trips[currentTripIndex].xPos == 0 && trips[currentTripIndex].yPos == 0) {
                 var coord = trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark]['gx:Track']['gx:coord'][trips[currentTripIndex].currentCoord].split(" ");
                 
+                if(coord[0] < minLongitude || coord[0] > maxLongitude || coord[1] < minLatitude || coord[1] > maxLatitude) {
+                  skip = true;
+                }
+
                 var coordNext = trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark]['gx:Track']['gx:coord'][trips[currentTripIndex].currentCoord + 1].split(" ");
 
                 var x = Math.floor(getXPosition(parseFloat(coord[0])));
@@ -280,28 +321,46 @@ function animate( timestamp ) {
               var pointsPerFrame = 1;
 
               if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Walking' || trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Cycling') {
-                trips[currentTripIndex].color = 1;
+                tbgr = 0;
+                tbgg = 0;
+                tbgb = 0;
+                uniforms.bga.value = 128;
                 pointsPerFrame = 1;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'On the subway' || trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'On a tram' || trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Moving') {
-                trips[currentTripIndex].color = 2;
+                tbgr = 51;
+                tbgg = 204;
+                tbgb = 255;
+                uniforms.bga.value = 128;
                 pointsPerFrame = 2;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Motorcycling') {
-                trips[currentTripIndex].color = 3;
+                tbgr = 255;
+                tbgg = 0;
+                tbgb = 0;
+                uniforms.bga.value = 128;
                 pointsPerFrame = 3;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Driving') {
-                trips[currentTripIndex].color = 4;
+                tbgr = 0;
+                tbgg = 0;
+                tbgb = 255;
+                uniforms.bga.value = 128;
                 pointsPerFrame = 3;
               } 
+
+              uniforms.bgr.value += Math.floor((tbgr - uniforms.bgr.value) / 50.0);
+              uniforms.bgg.value += Math.floor((tbgg - uniforms.bgg.value) / 50.0);
+              uniforms.bgb.value += Math.floor((tbgb - uniforms.bgb.value) / 50.0);
 
               pointsPerFrame = pointsPerFrame * speedFactor;
 
               for(var i = 0; i < pointsPerFrame; i++) {
-                if(Math.abs(trips[currentTripIndex].movedDeltaX) < Math.abs(trips[currentTripIndex].deltaX) && Math.abs(trips[currentTripIndex].movedDeltaY) < Math.abs(trips[currentTripIndex].deltaY)) {
+                if(Math.abs(trips[currentTripIndex].movedDeltaX) < Math.abs(trips[currentTripIndex].deltaX) && 
+                   Math.abs(trips[currentTripIndex].movedDeltaY) < Math.abs(trips[currentTripIndex].deltaY) &&
+                   !skip) {
 
                   var maxFactor = 1.0;
                   var minFactor = 0.8;
                 
-                  var boxSize = 3.0;
+                  var boxSize = 4.0;
 
                   for(var xx = trips[currentTripIndex].xPos - boxSize; xx <= trips[currentTripIndex].xPos + boxSize; xx++) {
                     for(var yy = trips[currentTripIndex].yPos - boxSize; yy <= trips[currentTripIndex].yPos + boxSize; yy++) {
@@ -309,8 +368,8 @@ function animate( timestamp ) {
                       var distance = Math.sqrt(Math.abs(xx - trips[currentTripIndex].xPos) * Math.abs(xx - trips[currentTripIndex].xPos) + Math.abs(yy - trips[currentTripIndex].yPos) * Math.abs(yy - trips[currentTripIndex].yPos));
                       var factor = (minFactor - maxFactor) / boxSize * distance + maxFactor;
 
-                      if(factor > minFactor)
-                        setDataBufferColorInfo(xx, yy, trips[currentTripIndex].color, currentTripIndex + 1, 255.0 * factor);
+                      //if(factor > minFactor)
+                        setDataBufferColorInfo(xx, yy, 255, 255, 255, 10); //255.0 * factor);
                     }
                   }
 
@@ -345,6 +404,21 @@ function animate( timestamp ) {
           currentTripIndex++;
         }
       }
+    } else if(currentTripIndex >= trips.length) {
+      currentTripIndex = 0;
+
+      for(var i = 0; i < trips.length; i++) {
+        resetTrip(trips[i]);
+      }
+
+      for(var i = 0; i < programData.length; i++) {
+        for(var j = 0; j < programData[0].length; j++) {
+    
+            setDataBufferColorA(i, j, 0, 0);
+        }
+      }
+
+      //location.reload(true);
     }
   //}
 

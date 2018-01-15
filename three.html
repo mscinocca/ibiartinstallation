@@ -42,8 +42,8 @@
 				vUv = uv;
 				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
 
-				//gl_Position.x = gl_Position.x - sin(gl_Position.y) * 5.0;
-				//gl_Position.y = gl_Position.y - sin(gl_Position.x) * 5.0;
+				//gl_Position.x = gl_Position.x - sin(gl_Position.y / 5.0) * 2.0;
+				//gl_Position.y = gl_Position.y - sin(gl_Position.x / 5.0) * 2.0;
 			}
 		</script>
 
@@ -54,6 +54,11 @@
 			uniform float pathIndex;
 			uniform float xPosition;
 			uniform float yPosition;
+
+			uniform float bgr;
+			uniform float bgg;
+			uniform float bgb;
+			uniform float bga;
 
 			uniform sampler2D texture;
 
@@ -111,6 +116,7 @@
 
 				float spacer = 8.0;
 
+				/*
 				if(mod(floor(gl_FragCoord.y), spacer) == 0.0 || 
 					mod(floor(gl_FragCoord.y - 1.0), spacer) == 0.0 ||
 					mod(floor(gl_FragCoord.y - 2.0), spacer) == 0.0 ||
@@ -164,8 +170,9 @@
 							1.0,
 							gl_FragColor.a + nominalAlpha);
 				}
+*/
 
-				if(
+				/*if(
 				(mod(floor(gl_FragCoord.x), spacer) == 0.0 || 
 				mod(floor(gl_FragCoord.x - 1.0), spacer) == 0.0 ||
 				mod(floor(gl_FragCoord.x - 2.0), spacer) == 0.0 ||
@@ -175,8 +182,9 @@
 				mod(floor(gl_FragCoord.y - 1.0), spacer) == 0.0 ||
 				mod(floor(gl_FragCoord.y - 2.0), spacer) == 0.0 ||
 				mod(floor(gl_FragCoord.y + 1.0), spacer) == 0.0 ||
-				mod(floor(gl_FragCoord.y + 2.0), spacer) == 0.0)) {
+				mod(floor(gl_FragCoord.y + 2.0), spacer) == 0.0)) {*/
 
+					/*
 					if(textureColor.r == 0.0) {
 						//gl_FragColor.rbg = vec3(1.0, 1.0, 1.0);
 						//gl_FragColor.a = 1.0;
@@ -198,14 +206,36 @@
 							gl_FragColor.g = 0.0;
 							gl_FragColor.b = 1.0;
 						}
+						*/
 
-						gl_FragColor.a = gl_FragColor.a * 3.0;
-					}
+						gl_FragColor.r = bgr / 255.0;
+						gl_FragColor.g = bgg / 255.0;
+						gl_FragColor.b = bgb / 255.0;
+						gl_FragColor.a = bga / 255.0;
 
+						gl_FragColor.r += textureColor.r;
+						gl_FragColor.g += textureColor.g;
+						gl_FragColor.b += textureColor.b;
+						gl_FragColor.a += textureColor.a;
+
+						/*
+						if(textureColor.a > 0.0)
+							gl_FragColor = textureColor; //gl_FragColor.a * 3.0;
+						else {
+							gl_FragColor.r = bgr / 255.0;
+							gl_FragColor.g = bgg / 255.0;
+							gl_FragColor.b = bgb / 255.0;
+							gl_FragColor.a = bga / 255.0;
+						}
+						*/
+					//}
+
+					/*
 					if(textureColor.g > 0.0 && textureColor.g < (pathIndex / 255.0 - 0.5 / 255.0)) {
 						gl_FragColor.a = max(0.6, textureColor.a * 0.6);
 					}
-				}
+					*/
+				//}
 			}
 		</script>
 	</body>
