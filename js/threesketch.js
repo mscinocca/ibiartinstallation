@@ -20,8 +20,8 @@ var minLatitude = 43.588199;
 var maxLatitude = 43.837695;
 */
 
-var minLongitude = -79.554406;
-var maxLongitude = -79.358937;
+var minLongitude = -79.505978;
+var maxLongitude = -79.336375;
 var minLatitude = 43.632960;
 var maxLatitude = 43.703421;
 
@@ -110,6 +110,8 @@ function init() {
     bgg: { value: 0.0 },
     bgb: { value: 0.0 },
     bga: { value: 0.0 },
+    currentXPosition: { value: 0.0 },
+    currentYPosition: { value: 0.0 }
   };
 
   var material = new THREE.ShaderMaterial( {
@@ -189,6 +191,8 @@ function setDataBufferColorA(x, y, color, a) {
   var i = Math.floor(y) * width * bytes + Math.floor(x) * bytes;
 
   data[i] = color;
+  data[i + 1] = color;
+  data[i + 2] = color;
   data[i + 3] = a;
 }
 
@@ -321,28 +325,28 @@ function animate( timestamp ) {
               var pointsPerFrame = 1;
 
               if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Walking' || trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Cycling') {
-                tbgr = 0;
-                tbgg = 0;
+                tbgr = 180;
+                tbgg = 180;
                 tbgb = 0;
-                uniforms.bga.value = 128;
+                uniforms.bga.value = 200;
                 pointsPerFrame = 1;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'On the subway' || trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'On a tram' || trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Moving') {
                 tbgr = 51;
                 tbgg = 204;
                 tbgb = 255;
-                uniforms.bga.value = 128;
+                uniforms.bga.value = 200;
                 pointsPerFrame = 2;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Motorcycling') {
                 tbgr = 255;
                 tbgg = 0;
                 tbgb = 0;
-                uniforms.bga.value = 128;
+                uniforms.bga.value = 200;
                 pointsPerFrame = 3;
               } else if(trips[currentTripIndex].kml.Document.Placemark[trips[currentTripIndex].currentPlaceMark].name == 'Driving') {
                 tbgr = 0;
                 tbgg = 0;
                 tbgb = 255;
-                uniforms.bga.value = 128;
+                uniforms.bga.value = 200;
                 pointsPerFrame = 3;
               } 
 
@@ -357,10 +361,10 @@ function animate( timestamp ) {
                    Math.abs(trips[currentTripIndex].movedDeltaY) < Math.abs(trips[currentTripIndex].deltaY) &&
                    !skip) {
 
-                  var maxFactor = 1.0;
-                  var minFactor = 0.8;
+                  var maxFactor = 0.0005;
+                  var minFactor = 0;
                 
-                  var boxSize = 4.0;
+                  var boxSize = 2.0;
 
                   for(var xx = trips[currentTripIndex].xPos - boxSize; xx <= trips[currentTripIndex].xPos + boxSize; xx++) {
                     for(var yy = trips[currentTripIndex].yPos - boxSize; yy <= trips[currentTripIndex].yPos + boxSize; yy++) {
@@ -368,20 +372,24 @@ function animate( timestamp ) {
                       var distance = Math.sqrt(Math.abs(xx - trips[currentTripIndex].xPos) * Math.abs(xx - trips[currentTripIndex].xPos) + Math.abs(yy - trips[currentTripIndex].yPos) * Math.abs(yy - trips[currentTripIndex].yPos));
                       var factor = (minFactor - maxFactor) / boxSize * distance + maxFactor;
 
-                      //if(factor > minFactor)
-                        setDataBufferColorInfo(xx, yy, 255, 255, 255, 10); //255.0 * factor);
+                      if(factor > minFactor)
+                        setDataBufferColorInfo(xx, yy, 255, 255, 255, 100 * factor);
                     }
                   }
 
                   if(Math.abs(trips[currentTripIndex].movedDeltaX) < Math.abs(trips[currentTripIndex].deltaX)) {
-                    trips[currentTripIndex].xPos += trips[currentTripIndex].moveDeltaX;
-                    trips[currentTripIndex].movedDeltaX += trips[currentTripIndex].moveDeltaX;
+                    trips[currentTripIndex].xPos += trips[currentTripIndex].moveDeltaX * boxSize / 2.0;
+                    trips[currentTripIndex].movedDeltaX += trips[currentTripIndex].moveDeltaX * boxSize / 2.0;
                   }
 
                   if(Math.abs(trips[currentTripIndex].movedDeltaY) < Math.abs(trips[currentTripIndex].deltaY)) {
-                    trips[currentTripIndex].yPos += trips[currentTripIndex].moveDeltaY;
-                    trips[currentTripIndex].movedDeltaY += trips[currentTripIndex].moveDeltaY;
+                    trips[currentTripIndex].yPos += trips[currentTripIndex].moveDeltaY * boxSize / 2.0;
+                    trips[currentTripIndex].movedDeltaY += trips[currentTripIndex].moveDeltaY * boxSize / 2.0;
                   }
+
+                  uniforms.currentXPosition.value = trips[currentTripIndex].xPos;
+                  uniforms.currentYPosition.value = trips[currentTripIndex].yPos;
+
                 } else {
 
                   trips[currentTripIndex].currentCoord++;

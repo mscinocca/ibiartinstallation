@@ -60,6 +60,9 @@
 			uniform float bgb;
 			uniform float bga;
 
+			uniform float currentXPosition;
+			uniform float currentYPosition;
+
 			uniform sampler2D texture;
 
 			highp float rand(vec2 co)
@@ -228,6 +231,16 @@
 							gl_FragColor.a = bga / 255.0;
 						}
 						*/
+
+						float distance = sqrt(abs(vUv.x - currentXPosition / 1920.0) * abs(vUv.x - currentXPosition / 1920.0) + abs(vUv.y - currentYPosition / 1080.0) * 1080.0 / 1920.0 * abs(vUv.y - currentYPosition / 1080.0) * 1080.0 / 1920.0 );
+
+						if(distance <= 0.0025) {
+							gl_FragColor.r = 1.0;
+							gl_FragColor.g = 1.0;
+							gl_FragColor.b = 1.0;
+							gl_FragColor.a = 1.0;
+						}
+
 					//}
 
 					/*
