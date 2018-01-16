@@ -142,8 +142,8 @@ function init() {
   //document.body.appendChild( stats.domElement );
 
   var loadCount = 0;
-  var loadStart = 1;
-  var loadEnd = 52;
+  var loadStart = 0;
+  var loadEnd = 59;
 
   var loadNumber = loadEnd - loadStart + 1;
 
@@ -217,7 +217,7 @@ function setDataBufferColorInfo(x, y, r, g, b, a) {
     data[i] = Math.min(255, data[i] + r);
     data[i + 1] = Math.min(255, data[i + 1] + g);
     data[i + 2] = Math.min(255, data[i + 2] + b);
-    data[i + 3] = Math.min(255, data[i + 3] + a);
+    data[i + 3] = Math.min(225, data[i + 3] + a);
 }
 
 function bumpAlphaColor(x, y, color, aFactor) {
@@ -361,7 +361,7 @@ function animate( timestamp ) {
                    Math.abs(trips[currentTripIndex].movedDeltaY) < Math.abs(trips[currentTripIndex].deltaY) &&
                    !skip) {
 
-                  var maxFactor = 0.4;
+                  var maxFactor = 0.3;
                   var minFactor = 0;
                 
                   var boxSize = 2.0;
@@ -385,10 +385,10 @@ function animate( timestamp ) {
 
                       if(factor > minFactor) {
                         setDataBufferColorInfo(xx, yy, 255, 255, 255, 255 * factor);
-                        setDataBufferColorInfo(xx - perpendicularX * 3, yy - perpendicularY * 3, 255, 255, 255, 255 * factor * 0.5);
-                        setDataBufferColorInfo(xx + perpendicularX * 3, yy + perpendicularY * 3, 255, 255, 255, 255 * factor * 0.7);
-                        setDataBufferColorInfo(xx - perpendicularX * 6, yy - perpendicularY * 6, 255, 255, 255, 255 * factor * 0.8);
-                        setDataBufferColorInfo(xx + perpendicularX * 6, yy + perpendicularY * 6, 255, 255, 255, 255 * factor * 0.2);
+                        setDataBufferColorInfo(xx - perpendicularX * 2, yy - perpendicularY * 2, 255, 255, 255, 255 * factor * 0.5);
+                        setDataBufferColorInfo(xx + perpendicularX * 2, yy + perpendicularY * 2, 255, 255, 255, 255 * factor * 0.7);
+                        setDataBufferColorInfo(xx - perpendicularX * 4, yy - perpendicularY * 4, 255, 255, 255, 255 * factor * 0.8);
+                        setDataBufferColorInfo(xx + perpendicularX * 4, yy + perpendicularY * 4, 255, 255, 255, 255 * factor * 0.2);
                       }
                     }
                   }
