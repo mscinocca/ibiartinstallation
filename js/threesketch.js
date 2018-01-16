@@ -361,7 +361,7 @@ function animate( timestamp ) {
                    Math.abs(trips[currentTripIndex].movedDeltaY) < Math.abs(trips[currentTripIndex].deltaY) &&
                    !skip) {
 
-                  var maxFactor = 0.3;
+                  var maxFactor = 0.4;
                   var minFactor = 0;
                 
                   var boxSize = 2.0;
