@@ -7,7 +7,7 @@
     "@xmlns": "http://www.opengis.net/kml/2.2",
     "@xmlns:gx": "http://www.google.com/kml/ext/2.2",
     "Document": {
-      "name": " Location history from 2017-11-28 to 2017-11-28 ",
+      "name": " Location history from 2017-11-25 to 2017-11-25 ",
       "open": "1",
       "description": "",
       "StyleMap": {
@@ -70,7 +70,7 @@
               }
             ]
           },
-          "description": "  from 2017-11-28T00:35:09.147Z to 2017-11-28T13:02:44.000Z. Distance 0m ",
+          "description": "  from 2017-11-25T00:53:26.991Z to 2017-11-25T17:51:37.368Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -82,12 +82,12 @@
             "gx:coord": "-79.3916563 43.6847358 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-28T00:35:09.147Z",
-            "end": "2017-11-28T13:02:44.000Z"
+            "begin": "2017-11-25T00:53:26.991Z",
+            "end": "2017-11-25T17:51:37.368Z"
           }
         },
         {
-          "name": "Driving",
+          "name": "On a tram",
           "address": "",
           "ExtendedData": {
             "Data": [
@@ -97,15 +97,15 @@
               },
               {
                 "@name": "Category",
-                "value": "Driving"
+                "value": "On a tram"
               },
               {
                 "@name": "Distance",
-                "value": "5056"
+                "value": "5212"
               }
             ]
           },
-          "description": " Driving from 2017-11-28T13:02:44.000Z to 2017-11-28T13:18:11.998Z. Distance 5056m ",
+          "description": " On a tram from 2017-11-25T17:51:37.368Z to 2017-11-25T18:11:48.498Z. Distance 5212m ",
           "Point": {
             "coordinates": ""
           },
@@ -117,21 +117,22 @@
             "gx:coord": [
               "-79.3916563 43.6847358 0",
               "-79.3916563 43.6847358 0",
-              "-79.3917877 43.6844416 0",
-              "-79.3990859 43.683738 0",
-              "-79.4017578 43.6871386 0",
-              "-79.4149098 43.6839076 0",
-              "-79.4274788 43.6813772 0",
-              "-79.4396989 43.6787805 0",
-              "-79.4446985 43.6776142 0",
-              "-79.4489275 43.6766488 0",
+              "-79.3916999 43.6844314 0",
+              "-79.4004492 43.6841884 0",
+              "-79.4010531 43.6863361 0",
+              "-79.4096013 43.6849431 0",
+              "-79.4130936 43.6865671 0",
+              "-79.4179599 43.6822513 0",
+              "-79.425799 43.679891 0",
+              "-79.4354517 43.6779955 0",
+              "-79.4487016 43.6766206 0",
               "-79.4486416 43.6765435 0",
               "-79.4486416 43.6765435 0"
             ]
           },
           "TimeSpan": {
-            "begin": "2017-11-28T13:02:44.000Z",
-            "end": "2017-11-28T13:18:11.998Z"
+            "begin": "2017-11-25T17:51:37.368Z",
+            "end": "2017-11-25T18:11:48.498Z"
           }
         },
         {
@@ -153,7 +154,7 @@
               }
             ]
           },
-          "description": " Bakery from 2017-11-28T13:18:11.998Z to 2017-11-28T13:27:29.805Z. Distance 0m ",
+          "description": " Bakery from 2017-11-25T18:11:48.498Z to 2017-11-25T19:23:19.668Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -165,12 +166,12 @@
             "gx:coord": "-79.4486416 43.6765435 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-28T13:18:11.998Z",
-            "end": "2017-11-28T13:27:29.805Z"
+            "begin": "2017-11-25T18:11:48.498Z",
+            "end": "2017-11-25T19:23:19.668Z"
           }
         },
         {
-          "name": "On a tram",
+          "name": "Driving",
           "address": "",
           "ExtendedData": {
             "Data": [
@@ -180,15 +181,15 @@
               },
               {
                 "@name": "Category",
-                "value": "On a tram"
+                "value": "Driving"
               },
               {
                 "@name": "Distance",
-                "value": "4809"
+                "value": "5077"
               }
             ]
           },
-          "description": " On a tram from 2017-11-28T13:27:29.805Z to 2017-11-28T13:48:40.994Z. Distance 4809m ",
+          "description": " Driving from 2017-11-25T19:23:19.668Z to 2017-11-25T19:48:13.331Z. Distance 5077m ",
           "Point": {
             "coordinates": ""
           },
@@ -200,24 +201,23 @@
             "gx:coord": [
               "-79.4486416 43.6765435 0",
               "-79.4486416 43.6765435 0",
-              "-79.448811 43.6766323 0",
-              "-79.4470141 43.6770706 0",
-              "-79.4394684 43.6787818 0",
-              "-79.4299115 43.6808472 0",
-              "-79.4236236 43.6820355 0",
-              "-79.416555 43.6833885 0",
-              "-79.4096103 43.6849807 0",
-              "-79.4075904 43.6845704 0",
-              "-79.4025739 43.6838316 0",
-              "-79.3957149 43.685353 0",
-              "-79.3920876 43.6851294 0",
+              "-79.44877 43.6766474 0",
+              "-79.4476899 43.6752838 0",
+              "-79.4462271 43.6745939 0",
+              "-79.4415933 43.6743568 0",
+              "-79.4314929 43.6748134 0",
+              "-79.4165668 43.676709 0",
+              "-79.4074348 43.6776088 0",
+              "-79.4030024 43.6791558 0",
+              "-79.398613 43.6838451 0",
+              "-79.3918453 43.6845759 0",
               "-79.3916563 43.6847358 0",
               "-79.3916563 43.6847358 0"
             ]
           },
           "TimeSpan": {
-            "begin": "2017-11-28T13:27:29.805Z",
-            "end": "2017-11-28T13:48:40.994Z"
+            "begin": "2017-11-25T19:23:19.668Z",
+            "end": "2017-11-25T19:48:13.331Z"
           }
         },
         {
@@ -239,7 +239,7 @@
               }
             ]
           },
-          "description": "  from 2017-11-28T13:48:40.994Z to 2017-11-28T13:55:29.589Z. Distance 0m ",
+          "description": "  from 2017-11-25T19:48:13.331Z to 2017-11-26T20:01:50.222Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -251,156 +251,8 @@
             "gx:coord": "-79.3916563 43.6847358 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-28T13:48:40.994Z",
-            "end": "2017-11-28T13:55:29.589Z"
-          }
-        },
-        {
-          "name": "Deer Park",
-          "address": "Toronto, ON",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": ""
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": "  from 2017-11-28T13:56:14.589Z to 2017-11-28T14:37:41.724Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.398642 43.6898373 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-28T13:56:14.589Z",
-            "end": "2017-11-28T14:37:41.724Z"
-          }
-        },
-        {
-          "name": "IBI Group",
-          "address": "55 St Clair Ave W #700, Toronto, ON M4V 2Y7",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "Consultant"
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": " Consultant from 2017-11-28T14:38:35.366Z to 2017-11-29T00:21:55.008Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.3967758 43.6872312 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-28T14:38:35.366Z",
-            "end": "2017-11-29T00:21:55.008Z"
-          }
-        },
-        {
-          "name": "Walking",
-          "address": "",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "Walking"
-              },
-              {
-                "@name": "Distance",
-                "value": "574"
-              }
-            ]
-          },
-          "description": " Walking from 2017-11-29T00:21:55.008Z to 2017-11-29T00:29:44.890Z. Distance 574m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": [
-              "-79.3967758 43.6872312 0",
-              "-79.3967758 43.6872312 0",
-              "-79.3969126 43.6872451 0",
-              "-79.3934806 43.6858847 0",
-              "-79.3916506 43.6844494 0",
-              "-79.3916563 43.6847358 0",
-              "-79.3916563 43.6847358 0"
-            ]
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T00:21:55.008Z",
-            "end": "2017-11-29T00:29:44.890Z"
-          }
-        },
-        {
-          "name": "Home",
-          "address": "7 Jackes Ave, Toronto, ON M4T 1E3",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": ""
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": "  from 2017-11-29T00:29:44.890Z to 2017-11-29T14:06:23.904Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.3916563 43.6847358 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-29T00:29:44.890Z",
-            "end": "2017-11-29T14:06:23.904Z"
+            "begin": "2017-11-25T19:48:13.331Z",
+            "end": "2017-11-26T20:01:50.222Z"
           }
         }
       ]

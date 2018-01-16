@@ -1,0 +1,884 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "UTF-8"
+  },
+  "kml": {
+    "@xmlns": "http://www.opengis.net/kml/2.2",
+    "@xmlns:gx": "http://www.google.com/kml/ext/2.2",
+    "Document": {
+      "name": " Location history from 2018-01-03 to 2018-01-03 ",
+      "open": "1",
+      "description": "",
+      "StyleMap": {
+        "@id": "multiTrack",
+        "Pair": [
+          {
+            "key": "normal",
+            "styleUrl": "#multiTrack_n"
+          },
+          {
+            "key": "highlight",
+            "styleUrl": "#multiTrack_h"
+          }
+        ]
+      },
+      "Style": [
+        {
+          "@id": "multiTrack_n",
+          "IconStyle": {
+            "Icon": {
+              "href": "https://earth.google.com/images/kml-icons/track-directional/track-0.png"
+            }
+          },
+          "LineStyle": {
+            "color": "99ffac59",
+            "width": "6"
+          }
+        },
+        {
+          "@id": "multiTrack_h",
+          "IconStyle": {
+            "scale": "1.2",
+            "Icon": {
+              "href": "https://earth.google.com/images/kml-icons/track-directional/track-0.png"
+            }
+          },
+          "LineStyle": {
+            "color": "99ffac59",
+            "width": "8"
+          }
+        }
+      ],
+      "Placemark": [
+        {
+          "name": "Home",
+          "address": "31 Newstead Rd, Etobicoke, ON M9P 3G2",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2018-01-03T01:04:05.109Z to 2018-01-03T12:45:31.184Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.5344813 43.6866257 0"
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T01:04:05.109Z",
+            "end": "2018-01-03T12:45:31.184Z"
+          }
+        },
+        {
+          "name": "Driving",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Driving"
+              },
+              {
+                "@name": "Distance",
+                "value": "11861"
+              }
+            ]
+          },
+          "description": " Driving from 2018-01-03T12:45:31.184Z to 2018-01-03T13:09:48.909Z. Distance 11861m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.5344813 43.6866257 0",
+              "-79.5344813 43.6866257 0",
+              "-79.5338814 43.6859775 0",
+              "-79.5261767 43.6842668 0",
+              "-79.5160066 43.6863255 0",
+              "-79.492608 43.6858276 0",
+              "-79.4925899 43.6858739 0",
+              "-79.4911946 43.6864664 0",
+              "-79.488539 43.687174 0",
+              "-79.4865815 43.6875553 0",
+              "-79.4840405 43.6880281 0",
+              "-79.4831202 43.6882481 0",
+              "-79.4831434 43.6882427 0",
+              "-79.4831433 43.6882427 0",
+              "-79.4821131 43.6885166 0",
+              "-79.4801718 43.6890888 0",
+              "-79.4752937 43.6904956 0",
+              "-79.4620036 43.6930581 0",
+              "-79.4448932 43.6941505 0",
+              "-79.4378093 43.6909529 0",
+              "-79.4356518 43.6899012 0",
+              "-79.4324068 43.6889059 0",
+              "-79.4320014 43.688657 0",
+              "-79.4273434 43.6888153 0",
+              "-79.4210872 43.6838275 0",
+              "-79.4186804 43.6830558 0",
+              "-79.4138858 43.6842923 0",
+              "-79.4110725 43.6846319 0",
+              "-79.4078867 43.6853296 0",
+              "-79.4055534 43.6858571 0",
+              "-79.3987796 43.6869681 0",
+              "-79.3966172 43.6874418 0",
+              "-79.3967758 43.6872312 0",
+              "-79.3967758 43.6872312 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T12:45:31.184Z",
+            "end": "2018-01-03T13:09:48.909Z"
+          }
+        },
+        {
+          "name": "IBI Group",
+          "address": "55 St Clair Ave W #700, Toronto, ON M4V 2Y7",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Consultant"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Consultant from 2018-01-03T13:09:48.909Z to 2018-01-03T14:37:11.575Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3967758 43.6872312 0"
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T13:09:48.909Z",
+            "end": "2018-01-03T14:37:11.575Z"
+          }
+        },
+        {
+          "name": "Walking",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Walking"
+              },
+              {
+                "@name": "Distance",
+                "value": "335"
+              }
+            ]
+          },
+          "description": " Walking from 2018-01-03T14:37:11.575Z to 2018-01-03T14:40:19.524Z. Distance 335m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3967758 43.6872312 0",
+              "-79.3967758 43.6872312 0",
+              "-79.3960284 43.6876831 0",
+              "-79.3935679 43.6881316 0",
+              "-79.3930277 43.6878488 0",
+              "-79.3930277 43.6878488 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T14:37:11.575Z",
+            "end": "2018-01-03T14:40:19.524Z"
+          }
+        },
+        {
+          "name": "On the subway",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "On the subway"
+              },
+              {
+                "@name": "Distance",
+                "value": "4614"
+              }
+            ]
+          },
+          "description": " On the subway from 2018-01-03T14:40:19.524Z to 2018-01-03T14:53:18.750Z. Distance 4614m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3930277 43.6878488 0",
+              "-79.3930277 43.6878488 0",
+              "-79.3905798 43.6819574 0",
+              "-79.3776289 43.6479567 0",
+              "-79.37770119999999 43.648011 0",
+              "-79.37770119999999 43.648011 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T14:40:19.524Z",
+            "end": "2018-01-03T14:53:18.750Z"
+          }
+        },
+        {
+          "name": "Turner Construction Company",
+          "address": "48 Yonge St #1100, Toronto, ON M5E 1G6",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Construction Company"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Construction Company from 2018-01-03T14:53:18.750Z to 2018-01-03T16:59:50.144Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.37770119999999 43.648011 0"
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T14:53:18.750Z",
+            "end": "2018-01-03T16:59:50.144Z"
+          }
+        },
+        {
+          "name": "Walking",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Walking"
+              },
+              {
+                "@name": "Distance",
+                "value": "377"
+              }
+            ]
+          },
+          "description": " Walking from 2018-01-03T16:59:50.144Z to 2018-01-03T17:01:41.000Z. Distance 377m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.37770119999999 43.648011 0",
+              "-79.37770119999999 43.648011 0",
+              "-79.3774248 43.6479591 0",
+              "-79.3775132 43.6479271 0",
+              "-79.3773907 43.647956 0",
+              "-79.3763425 43.6488717 0",
+              "-79.3765217 43.6486448 0",
+              "-79.3773956 43.6483514 0",
+              "-79.3781075 43.649059799999996 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T16:59:50.144Z",
+            "end": "2018-01-03T17:01:41.000Z"
+          }
+        },
+        {
+          "name": "King Station",
+          "address": "Toronto, ON M5H 1A1",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Subway Station"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Subway Station from 2018-01-03T17:01:41.000Z to 2018-01-03T17:13:44.613Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3781075 43.649059799999996 0"
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T17:01:41.000Z",
+            "end": "2018-01-03T17:13:44.613Z"
+          }
+        },
+        {
+          "name": "On the subway",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "On the subway"
+              },
+              {
+                "@name": "Distance",
+                "value": "4768"
+              }
+            ]
+          },
+          "description": " On the subway from 2018-01-03T17:13:44.613Z to 2018-01-03T17:22:10.250Z. Distance 4768m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3781075 43.649059799999996 0",
+              "-79.3894579 43.6785609 0",
+              "-79.3940662 43.6880751 0",
+              "-79.3966352 43.6874117 0",
+              "-79.3967758 43.6872312 0",
+              "-79.3967758 43.6872312 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T17:13:44.613Z",
+            "end": "2018-01-03T17:22:10.250Z"
+          }
+        },
+        {
+          "name": "IBI Group",
+          "address": "55 St Clair Ave W #700, Toronto, ON M4V 2Y7",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Consultant"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Consultant from 2018-01-03T17:22:10.250Z to 2018-01-03T19:40:03.876Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3967758 43.6872312 0"
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T17:22:10.250Z",
+            "end": "2018-01-03T19:40:03.876Z"
+          }
+        },
+        {
+          "name": "Walking",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Walking"
+              },
+              {
+                "@name": "Distance",
+                "value": "253"
+              }
+            ]
+          },
+          "description": " Walking from 2018-01-03T19:40:03.876Z to 2018-01-03T19:42:05.406Z. Distance 253m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3967758 43.6872312 0",
+              "-79.3967758 43.6872312 0",
+              "-79.3964734 43.6873853 0",
+              "-79.3948461 43.6879729 0",
+              "-79.39391588237568 43.68814596151339 0",
+              "-79.39391588237568 43.68814596151339 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T19:40:03.876Z",
+            "end": "2018-01-03T19:42:05.406Z"
+          }
+        },
+        {
+          "name": "Deer Park",
+          "address": "Toronto, ON",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2018-01-03T19:42:05.406Z to 2018-01-03T19:48:08.206Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.398642 43.6898373 0"
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T19:42:05.406Z",
+            "end": "2018-01-03T19:48:08.206Z"
+          }
+        },
+        {
+          "name": "On the subway",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "On the subway"
+              },
+              {
+                "@name": "Distance",
+                "value": "2274"
+              }
+            ]
+          },
+          "description": " On the subway from 2018-01-03T19:48:08.206Z to 2018-01-03T19:54:05.117Z. Distance 2274m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.39391588237568 43.68814596151339 0",
+              "-79.39391588237568 43.68814596151339 0",
+              "-79.3864129 43.6706017 0",
+              "-79.387209 43.6705113 0",
+              "-79.3881861 43.6702894 0",
+              "-79.3885561 43.6695689 0",
+              "-79.3885561 43.6695689 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T19:48:08.206Z",
+            "end": "2018-01-03T19:54:05.117Z"
+          }
+        },
+        {
+          "name": "43° 40' 10.448\" N, 79° 23' 18.802\" W",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2018-01-03T19:54:05.117Z to 2018-01-03T21:42:24.195Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3885561 43.6695689 0"
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T19:54:05.117Z",
+            "end": "2018-01-03T21:42:24.195Z"
+          }
+        },
+        {
+          "name": "On the subway",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "On the subway"
+              },
+              {
+                "@name": "Distance",
+                "value": "3490"
+              }
+            ]
+          },
+          "description": " On the subway from 2018-01-03T21:42:24.195Z to 2018-01-03T22:02:57.800Z. Distance 3490m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3885561 43.6695689 0",
+              "-79.3885561 43.6695689 0",
+              "-79.3880252 43.6703369 0",
+              "-79.3873764 43.6705177 0",
+              "-79.3865502 43.6705804 0",
+              "-79.3857913 43.6706797 0",
+              "-79.3857342 43.670679 0",
+              "-79.3855019 43.6703263 0",
+              "-79.3799378 43.645964 0",
+              "-79.3808734 43.6451791 0",
+              "-79.3800796 43.6437639 0",
+              "-79.3807959 43.6428613 0",
+              "-79.3808201410162 43.642725391987284 0",
+              "-79.3808201410162 43.642725391987284 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T21:42:24.195Z",
+            "end": "2018-01-03T22:02:57.800Z"
+          }
+        },
+        {
+          "name": "Entertainment District",
+          "address": "Toronto, ON",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2018-01-03T22:02:57.800Z to 2018-01-03T22:09:39.857Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3887901 43.6426611 0"
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T22:02:57.800Z",
+            "end": "2018-01-03T22:09:39.857Z"
+          }
+        },
+        {
+          "name": "Driving",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Driving"
+              },
+              {
+                "@name": "Distance",
+                "value": "945"
+              }
+            ]
+          },
+          "description": " Driving from 2018-01-03T22:09:39.857Z to 2018-01-03T22:12:40.458Z. Distance 945m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3808201410162 43.642725391987284 0",
+              "-79.3808201410162 43.642725391987284 0",
+              "-79.3808605 43.6430579 0",
+              "-79.3837603 43.6424581 0",
+              "-79.3879169 43.6408917 0",
+              "-79.3907787 43.6403515 0",
+              "-79.39139856109243 43.64044825845051 0",
+              "-79.39139856109243 43.64044825845051 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T22:09:39.857Z",
+            "end": "2018-01-03T22:12:40.458Z"
+          }
+        },
+        {
+          "name": "CityPlace",
+          "address": "Toronto, ON",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2018-01-03T22:12:40.458Z to 2018-01-03T22:19:08.864Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3901975 43.6416061 0"
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T22:12:40.458Z",
+            "end": "2018-01-03T22:19:08.864Z"
+          }
+        },
+        {
+          "name": "Driving",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Driving"
+              },
+              {
+                "@name": "Distance",
+                "value": "14789"
+              }
+            ]
+          },
+          "description": " Driving from 2018-01-03T22:19:08.864Z to 2018-01-03T22:44:42.812Z. Distance 14789m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.39139856109243 43.64044825845051 0",
+              "-79.39139856109243 43.64044825845051 0",
+              "-79.3933685 43.6385693 0",
+              "-79.4135314 43.6379884 0",
+              "-79.4353609 43.6345222 0",
+              "-79.4779994 43.6403048 0",
+              "-79.4835894 43.6461744 0",
+              "-79.4852007 43.647914 0",
+              "-79.4941709 43.6492641 0",
+              "-79.499585 43.650099 0",
+              "-79.5066751 43.6526931 0",
+              "-79.5127939 43.6536543 0",
+              "-79.5171667 43.6590811 0",
+              "-79.517758 43.6625299 0",
+              "-79.5234193 43.6764211 0",
+              "-79.5255 43.6798548 0",
+              "-79.5260637 43.6817182 0",
+              "-79.5311085 43.6833607 0",
+              "-79.5340506 43.6861722 0",
+              "-79.5348317 43.6868938 0",
+              "-79.5348317 43.6868938 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T22:19:08.864Z",
+            "end": "2018-01-03T22:44:42.812Z"
+          }
+        },
+        {
+          "name": "43° 41' 12.8177\" N, 79° 32' 5.3941\" W",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "milena.radak1@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2018-01-03T22:44:42.812Z to 2018-01-04T12:41:50.901Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.5348317 43.6868938 0"
+          },
+          "TimeSpan": {
+            "begin": "2018-01-03T22:44:42.812Z",
+            "end": "2018-01-04T12:41:50.901Z"
+          }
+        }
+      ]
+    }
+  }
+}

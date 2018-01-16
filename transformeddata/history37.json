@@ -7,7 +7,7 @@
     "@xmlns": "http://www.opengis.net/kml/2.2",
     "@xmlns:gx": "http://www.google.com/kml/ext/2.2",
     "Document": {
-      "name": " Location history from 2017-12-15 to 2017-12-15 ",
+      "name": " Location history from 2017-12-14 to 2017-12-14 ",
       "open": "1",
       "description": "",
       "StyleMap": {
@@ -70,7 +70,7 @@
               }
             ]
           },
-          "description": "  from 2017-12-15T00:03:56.779Z to 2017-12-15T13:52:09.144Z. Distance 0m ",
+          "description": "  from 2017-12-14T01:11:07.779Z to 2017-12-14T13:55:02.075Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -82,8 +82,8 @@
             "gx:coord": "-79.4216514 43.6611263 0"
           },
           "TimeSpan": {
-            "begin": "2017-12-15T00:03:56.779Z",
-            "end": "2017-12-15T13:52:09.144Z"
+            "begin": "2017-12-14T01:11:07.779Z",
+            "end": "2017-12-14T13:55:02.075Z"
           }
         },
         {
@@ -101,11 +101,11 @@
               },
               {
                 "@name": "Distance",
-                "value": "5235"
+                "value": "4792"
               }
             ]
           },
-          "description": " On the subway from 2017-12-15T13:52:09.144Z to 2017-12-15T14:13:24.219Z. Distance 5235m ",
+          "description": " On the subway from 2017-12-14T13:55:02.075Z to 2017-12-14T14:17:18.639Z. Distance 4792m ",
           "Point": {
             "coordinates": ""
           },
@@ -117,20 +117,213 @@
             "gx:coord": [
               "-79.4216514 43.6611263 0",
               "-79.4216514 43.6611263 0",
-              "-79.4217109 43.6623274 0",
-              "-79.4185273 43.664115 0",
-              "-79.4112004 43.6660908 0",
-              "-79.3924047 43.6699066 0",
-              "-79.386573 43.6732834 0",
-              "-79.3930595 43.6879957 0",
-              "-79.3959963 43.6876989 0",
+              "-79.4215464 43.6611628 0",
+              "-79.4183641 43.663912 0",
+              "-79.4054539 43.6668843 0",
+              "-79.3977958 43.6686633 0",
+              "-79.3813558 43.6486349 0",
+              "-79.3818046 43.649033599999996 0",
+              "-79.3818046 43.649033599999996 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-14T13:55:02.075Z",
+            "end": "2017-12-14T14:17:18.639Z"
+          }
+        },
+        {
+          "name": "First Canadian Place",
+          "address": "100 King St W, Toronto, ON M5X 1A9",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "erin.g.mcdermott@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Shopping Mall"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Shopping Mall from 2017-12-14T14:17:18.639Z to 2017-12-14T15:18:28.295Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3818046 43.649033599999996 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-12-14T14:17:18.639Z",
+            "end": "2017-12-14T15:18:28.295Z"
+          }
+        },
+        {
+          "name": "Walking",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "erin.g.mcdermott@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Walking"
+              },
+              {
+                "@name": "Distance",
+                "value": "270"
+              }
+            ]
+          },
+          "description": " Walking from 2017-12-14T15:18:28.295Z to 2017-12-14T15:19:58.295Z. Distance 270m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3818046 43.649033599999996 0",
+              "-79.3818046 43.649033599999996 0",
+              "-79.3814866 43.6487533 0",
+              "-79.3787495 43.6481974 0",
+              "-79.3787287367369 43.64819925226423 0",
+              "-79.3787287367369 43.64819925226423 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-14T15:18:28.295Z",
+            "end": "2017-12-14T15:19:58.295Z"
+          }
+        },
+        {
+          "name": "Financial District",
+          "address": "Toronto, ON",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "erin.g.mcdermott@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2017-12-14T15:19:58.295Z to 2017-12-14T15:25:30.674Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3817523 43.647934799999994 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-12-14T15:19:58.295Z",
+            "end": "2017-12-14T15:25:30.674Z"
+          }
+        },
+        {
+          "name": "On the subway",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "erin.g.mcdermott@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "On the subway"
+              },
+              {
+                "@name": "Distance",
+                "value": "4600"
+              }
+            ]
+          },
+          "description": " On the subway from 2017-12-14T15:25:30.674Z to 2017-12-14T15:37:59.268Z. Distance 4600m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3787287367369 43.64819925226423 0",
+              "-79.3787287367369 43.64819925226423 0",
+              "-79.3787208 43.6481395 0",
+              "-79.3891297 43.6787827 0",
+              "-79.393127 43.6881038 0",
+              "-79.393127 43.6881038 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-12-14T15:25:30.674Z",
+            "end": "2017-12-14T15:37:59.268Z"
+          }
+        },
+        {
+          "name": "Walking",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "erin.g.mcdermott@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Walking"
+              },
+              {
+                "@name": "Distance",
+                "value": "334"
+              }
+            ]
+          },
+          "description": " Walking from 2017-12-14T15:37:59.268Z to 2017-12-14T15:41:23.993Z. Distance 334m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.393127 43.6881038 0",
+              "-79.393127 43.6881038 0",
+              "-79.3965493 43.6874835 0",
               "-79.3959247 43.687510599999996 0",
               "-79.3959247 43.687510599999996 0"
             ]
           },
           "TimeSpan": {
-            "begin": "2017-12-15T13:52:09.144Z",
-            "end": "2017-12-15T14:13:24.219Z"
+            "begin": "2017-12-14T15:37:59.268Z",
+            "end": "2017-12-14T15:41:23.993Z"
           }
         },
         {
@@ -152,7 +345,7 @@
               }
             ]
           },
-          "description": "  from 2017-12-15T14:13:24.219Z to 2017-12-15T22:14:05.269Z. Distance 0m ",
+          "description": "  from 2017-12-14T15:41:23.993Z to 2017-12-14T22:12:34.003Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -164,8 +357,8 @@
             "gx:coord": "-79.3959247 43.687510599999996 0"
           },
           "TimeSpan": {
-            "begin": "2017-12-15T14:13:24.219Z",
-            "end": "2017-12-15T22:14:05.269Z"
+            "begin": "2017-12-14T15:41:23.993Z",
+            "end": "2017-12-14T22:12:34.003Z"
           }
         },
         {
@@ -187,7 +380,7 @@
               }
             ]
           },
-          "description": "  from 2017-12-15T22:14:55.562Z to 2017-12-15T22:29:48.205Z. Distance 0m ",
+          "description": "  from 2017-12-14T22:13:19.003Z to 2017-12-14T22:21:50.644Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -199,8 +392,8 @@
             "gx:coord": "-79.398642 43.6898373 0"
           },
           "TimeSpan": {
-            "begin": "2017-12-15T22:14:55.562Z",
-            "end": "2017-12-15T22:29:48.205Z"
+            "begin": "2017-12-14T22:13:19.003Z",
+            "end": "2017-12-14T22:21:50.644Z"
           }
         },
         {
@@ -218,11 +411,11 @@
               },
               {
                 "@name": "Distance",
-                "value": "5257"
+                "value": "4425"
               }
             ]
           },
-          "description": " On the subway from 2017-12-15T22:29:48.205Z to 2017-12-15T22:46:36.792Z. Distance 5257m ",
+          "description": " On the subway from 2017-12-14T22:21:50.644Z to 2017-12-14T22:38:38.124Z. Distance 4425m ",
           "Point": {
             "coordinates": ""
           },
@@ -232,24 +425,24 @@
               "#text": "clampToGround"
             },
             "gx:coord": [
-              "-79.39461336582573 43.68806142114693 0",
-              "-79.39461336582573 43.68806142114693 0",
-              "-79.3934607 43.6885726 0",
-              "-79.38763 43.6748827 0",
-              "-79.3923537 43.6699208 0",
-              "-79.4111925 43.6660878 0",
-              "-79.4259121 43.6620381 0",
-              "-79.4253587655966 43.66194792847265 0",
-              "-79.4253587655966 43.66194792847265 0"
+              "-79.39414554246513 43.68834122009521 0",
+              "-79.39414554246513 43.68834122009521 0",
+              "-79.3934975 43.6881806 0",
+              "-79.3887351 43.676609 0",
+              "-79.3807288 43.6548332 0",
+              "-79.3805992 43.6558738 0",
+              "-79.3806589 43.6535476 0",
+              "-79.38070992840791 43.654873858167406 0",
+              "-79.38070992840791 43.654873858167406 0"
             ]
           },
           "TimeSpan": {
-            "begin": "2017-12-15T22:29:48.205Z",
-            "end": "2017-12-15T22:46:36.792Z"
+            "begin": "2017-12-14T22:21:50.644Z",
+            "end": "2017-12-14T22:38:38.124Z"
           }
         },
         {
-          "name": "Dovercourt Park",
+          "name": "Downtown Yonge",
           "address": "Toronto, ON",
           "ExtendedData": {
             "Data": [
@@ -267,7 +460,7 @@
               }
             ]
           },
-          "description": "  from 2017-12-15T22:46:36.792Z to 2017-12-15T22:55:59.047Z. Distance 0m ",
+          "description": "  from 2017-12-14T22:38:38.124Z to 2017-12-14T23:41:40.449Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -276,15 +469,15 @@
               "@xmlns": "http://www.opengis.net/kml/2.2",
               "#text": "clampToGround"
             },
-            "gx:coord": "-79.4338188 43.6658469 0"
+            "gx:coord": "-79.3817523 43.6574254 0"
           },
           "TimeSpan": {
-            "begin": "2017-12-15T22:46:36.792Z",
-            "end": "2017-12-15T22:55:59.047Z"
+            "begin": "2017-12-14T22:38:38.124Z",
+            "end": "2017-12-14T23:41:40.449Z"
           }
         },
         {
-          "name": "Walking",
+          "name": "On the subway",
           "address": "",
           "ExtendedData": {
             "Data": [
@@ -294,15 +487,15 @@
               },
               {
                 "@name": "Category",
-                "value": "Walking"
+                "value": "On the subway"
               },
               {
                 "@name": "Distance",
-                "value": "350"
+                "value": "4945"
               }
             ]
           },
-          "description": " Walking from 2017-12-15T22:55:59.047Z to 2017-12-15T22:57:14.780Z. Distance 350m ",
+          "description": " On the subway from 2017-12-14T23:41:40.449Z to 2017-12-15T00:03:56.779Z. Distance 4945m ",
           "Point": {
             "coordinates": ""
           },
@@ -312,17 +505,20 @@
               "#text": "clampToGround"
             },
             "gx:coord": [
-              "-79.4253587655966 43.66194792847265 0",
-              "-79.4253587655966 43.66194792847265 0",
-              "-79.4253329 43.6620994 0",
-              "-79.4216615 43.6613736 0",
+              "-79.38070992840791 43.654873858167406 0",
+              "-79.38070992840791 43.654873858167406 0",
+              "-79.3809204 43.656014 0",
+              "-79.3851327 43.6705761 0",
+              "-79.3921463 43.6699711 0",
+              "-79.4110777 43.6659758 0",
+              "-79.4215434 43.6612705 0",
               "-79.4216514 43.6611263 0",
               "-79.4216514 43.6611263 0"
             ]
           },
           "TimeSpan": {
-            "begin": "2017-12-15T22:55:59.047Z",
-            "end": "2017-12-15T22:57:14.780Z"
+            "begin": "2017-12-14T23:41:40.449Z",
+            "end": "2017-12-15T00:03:56.779Z"
           }
         },
         {
@@ -344,7 +540,7 @@
               }
             ]
           },
-          "description": "  from 2017-12-15T22:57:14.780Z to 2017-12-16T17:41:29.290Z. Distance 0m ",
+          "description": "  from 2017-12-15T00:03:56.779Z to 2017-12-15T13:52:09.144Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -356,8 +552,8 @@
             "gx:coord": "-79.4216514 43.6611263 0"
           },
           "TimeSpan": {
-            "begin": "2017-12-15T22:57:14.780Z",
-            "end": "2017-12-16T17:41:29.290Z"
+            "begin": "2017-12-15T00:03:56.779Z",
+            "end": "2017-12-15T13:52:09.144Z"
           }
         }
       ]

@@ -70,7 +70,7 @@
               }
             ]
           },
-          "description": "  from 2017-11-29T00:00:00.000Z to 2017-11-29T13:43:26.339Z. Distance 0m ",
+          "description": "  from 2017-11-28T23:08:30.343Z to 2017-11-29T13:43:26.339Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -82,7 +82,7 @@
             "gx:coord": "-79.4216381 43.6614613 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-29T00:00:00.000Z",
+            "begin": "2017-11-28T23:08:30.343Z",
             "end": "2017-11-29T13:43:26.339Z"
           }
         },
@@ -136,11 +136,11 @@
               },
               {
                 "@name": "Distance",
-                "value": "4965"
+                "value": "4972"
               }
             ]
           },
-          "description": " On the subway from 2017-11-29T13:56:47.043Z to 2017-11-29T14:09:41.103Z. Distance 4965m ",
+          "description": " On the subway from 2017-11-29T13:56:47.043Z to 2017-11-29T14:09:43.624Z. Distance 4972m ",
           "Point": {
             "coordinates": ""
           },
@@ -155,13 +155,14 @@
               "-79.4188224 43.6637663 0",
               "-79.4037046 43.6673914 0",
               "-79.3850298 43.6705128 0",
+              "-79.3964744 43.6871467 0",
               "-79.3967758 43.6872312 0",
               "-79.3967758 43.6872312 0"
             ]
           },
           "TimeSpan": {
             "begin": "2017-11-29T13:56:47.043Z",
-            "end": "2017-11-29T14:09:41.103Z"
+            "end": "2017-11-29T14:09:43.624Z"
           }
         },
         {
@@ -183,7 +184,7 @@
               }
             ]
           },
-          "description": " Consultant from 2017-11-29T14:09:41.103Z to 2017-11-29T18:03:10.280Z. Distance 0m ",
+          "description": " Consultant from 2017-11-29T14:09:43.624Z to 2017-11-29T18:03:10.280Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -195,7 +196,7 @@
             "gx:coord": "-79.3967758 43.6872312 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-29T14:09:41.103Z",
+            "begin": "2017-11-29T14:09:43.624Z",
             "end": "2017-11-29T18:03:10.280Z"
           }
         },
@@ -391,7 +392,7 @@
           }
         },
         {
-          "name": "Moving",
+          "name": "On the subway",
           "address": "",
           "ExtendedData": {
             "Data": [
@@ -401,15 +402,15 @@
               },
               {
                 "@name": "Category",
-                "value": "Moving"
+                "value": "On the subway"
               },
               {
                 "@name": "Distance",
-                "value": "5158"
+                "value": "5151"
               }
             ]
           },
-          "description": " Moving from 2017-11-29T20:06:32.585Z to 2017-11-29T20:25:50.188Z. Distance 5158m ",
+          "description": " On the subway from 2017-11-29T20:06:32.585Z to 2017-11-29T20:25:50.188Z. Distance 5151m ",
           "Point": {
             "coordinates": ""
           },
@@ -426,8 +427,8 @@
               "-79.3837389 43.6650789 0",
               "-79.3950838 43.6879262 0",
               "-79.3967205 43.6877941 0",
-              "-79.39650672425675 43.68718805012783 0",
-              "-79.39650672425675 43.68718805012783 0"
+              "-79.3967758 43.6872312 0",
+              "-79.3967758 43.6872312 0"
             ]
           },
           "TimeSpan": {
@@ -436,7 +437,164 @@
           }
         },
         {
-          "name": "Deer Park",
+          "name": "IBI Group",
+          "address": "55 St Clair Ave W #700, Toronto, ON M4V 2Y7",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "erin.g.mcdermott@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Consultant"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Consultant from 2017-11-29T20:25:50.188Z to 2017-11-29T23:48:01.664Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3967758 43.6872312 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-11-29T20:25:50.188Z",
+            "end": "2017-11-29T23:48:01.664Z"
+          }
+        },
+        {
+          "name": "On the subway",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "erin.g.mcdermott@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "On the subway"
+              },
+              {
+                "@name": "Distance",
+                "value": "1077"
+              }
+            ]
+          },
+          "description": " On the subway from 2017-11-29T23:48:01.664Z to 2017-11-29T23:55:06.744Z. Distance 1077m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3967758 43.6872312 0",
+              "-79.3967758 43.6872312 0",
+              "-79.3963572 43.6871144 0",
+              "-79.3931673 43.6881068 0",
+              "-79.3905315 43.6815214 0",
+              "-79.3905315 43.6815214 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-11-29T23:48:01.664Z",
+            "end": "2017-11-29T23:55:06.744Z"
+          }
+        },
+        {
+          "name": "Moving",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "erin.g.mcdermott@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Moving"
+              },
+              {
+                "@name": "Distance",
+                "value": "1306"
+              }
+            ]
+          },
+          "description": " Moving from 2017-11-29T23:55:06.744Z to 2017-11-30T00:00:00.000Z. Distance 1306m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3905315 43.6815214 0",
+              "-79.3924249 43.6698561 0",
+              "-79.3924249 43.6698561 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-11-29T23:55:06.744Z",
+            "end": "2017-11-30T00:00:00.000Z"
+          }
+        },
+        {
+          "name": "On the subway",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "erin.g.mcdermott@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "On the subway"
+              },
+              {
+                "@name": "Distance",
+                "value": "2382"
+              }
+            ]
+          },
+          "description": " On the subway from 2017-11-30T00:00:00.000Z to 2017-11-30T00:04:24.663Z. Distance 2382m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3924249 43.6698561 0",
+              "-79.4038233 43.6673665 0",
+              "-79.4199016 43.6632507 0",
+              "-79.41926980449371 43.663392575683126 0",
+              "-79.41926980449371 43.663392575683126 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-11-30T00:00:00.000Z",
+            "end": "2017-11-30T00:04:24.663Z"
+          }
+        },
+        {
+          "name": "Christie Pits",
           "address": "Toronto, ON",
           "ExtendedData": {
             "Data": [
@@ -454,7 +612,7 @@
               }
             ]
           },
-          "description": "  from 2017-11-29T20:25:50.188Z to 2017-11-29T21:24:19.086Z. Distance 0m ",
+          "description": "  from 2017-11-30T00:04:24.663Z to 2017-11-30T13:39:00.489Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -463,11 +621,11 @@
               "@xmlns": "http://www.opengis.net/kml/2.2",
               "#text": "clampToGround"
             },
-            "gx:coord": "-79.398642 43.6898373 0"
+            "gx:coord": "-79.4239707 43.6661151 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-29T20:25:50.188Z",
-            "end": "2017-11-29T21:24:19.086Z"
+            "begin": "2017-11-30T00:04:24.663Z",
+            "end": "2017-11-30T13:39:00.489Z"
           }
         }
       ]

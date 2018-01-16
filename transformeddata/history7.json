@@ -7,7 +7,7 @@
     "@xmlns": "http://www.opengis.net/kml/2.2",
     "@xmlns:gx": "http://www.google.com/kml/ext/2.2",
     "Document": {
-      "name": " Location history from 2017-11-23 to 2017-11-23 ",
+      "name": " Location history from 2017-11-22 to 2017-11-22 ",
       "open": "1",
       "description": "",
       "StyleMap": {
@@ -52,8 +52,8 @@
       ],
       "Placemark": [
         {
-          "name": "Home",
-          "address": "7 Jackes Ave, Toronto, ON M4T 1E3",
+          "name": "Summerhill",
+          "address": "Toronto, ON",
           "ExtendedData": {
             "Data": [
               {
@@ -70,7 +70,7 @@
               }
             ]
           },
-          "description": "  from 2017-11-23T01:38:06.639Z to 2017-11-23T14:30:42.998Z. Distance 0m ",
+          "description": "  from 2017-11-22T00:07:39.432Z to 2017-11-22T13:42:01.819Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -79,131 +79,11 @@
               "@xmlns": "http://www.opengis.net/kml/2.2",
               "#text": "clampToGround"
             },
-            "gx:coord": "-79.3916563 43.6847358 0"
+            "gx:coord": "-79.3944199 43.6811436 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-23T01:38:06.639Z",
-            "end": "2017-11-23T14:30:42.998Z"
-          }
-        },
-        {
-          "name": "Walking",
-          "address": "",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "Walking"
-              },
-              {
-                "@name": "Distance",
-                "value": "707"
-              }
-            ]
-          },
-          "description": " Walking from 2017-11-23T14:30:42.998Z to 2017-11-23T14:37:30.919Z. Distance 707m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": [
-              "-79.3916563 43.6847358 0",
-              "-79.3916563 43.6847358 0",
-              "-79.3917223 43.6844463 0",
-              "-79.3939263 43.68791 0",
-              "-79.3967149 43.6873986 0",
-              "-79.3967758 43.6872312 0",
-              "-79.3967758 43.6872312 0"
-            ]
-          },
-          "TimeSpan": {
-            "begin": "2017-11-23T14:30:42.998Z",
-            "end": "2017-11-23T14:37:30.919Z"
-          }
-        },
-        {
-          "name": "IBI Group",
-          "address": "55 St Clair Ave W #700, Toronto, ON M4V 2Y7",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "Consultant"
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": " Consultant from 2017-11-23T14:37:30.919Z to 2017-11-23T17:34:06.970Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.3967758 43.6872312 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-23T14:37:30.919Z",
-            "end": "2017-11-23T17:34:06.970Z"
-          }
-        },
-        {
-          "name": "Walking",
-          "address": "",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "Walking"
-              },
-              {
-                "@name": "Distance",
-                "value": "408"
-              }
-            ]
-          },
-          "description": " Walking from 2017-11-23T17:34:06.970Z to 2017-11-23T17:36:03.214Z. Distance 408m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": [
-              "-79.3967758 43.6872312 0",
-              "-79.3967758 43.6872312 0",
-              "-79.3969524 43.6872852 0",
-              "-79.3934503 43.6871636 0",
-              "-79.39372032996259 43.68814398835834 0",
-              "-79.39372032996259 43.68814398835834 0"
-            ]
-          },
-          "TimeSpan": {
-            "begin": "2017-11-23T17:34:06.970Z",
-            "end": "2017-11-23T17:36:03.214Z"
+            "begin": "2017-11-22T00:07:39.432Z",
+            "end": "2017-11-22T13:42:01.819Z"
           }
         },
         {
@@ -225,7 +105,7 @@
               }
             ]
           },
-          "description": "  from 2017-11-23T17:36:03.214Z to 2017-11-23T17:42:43.387Z. Distance 0m ",
+          "description": "  from 2017-11-22T13:42:58.961Z to 2017-11-22T13:48:17.309Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -237,12 +117,12 @@
             "gx:coord": "-79.398642 43.6898373 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-23T17:36:03.214Z",
-            "end": "2017-11-23T17:42:43.387Z"
+            "begin": "2017-11-22T13:42:58.961Z",
+            "end": "2017-11-22T13:48:17.309Z"
           }
         },
         {
-          "name": "Walking",
+          "name": "Moving",
           "address": "",
           "ExtendedData": {
             "Data": [
@@ -252,15 +132,15 @@
               },
               {
                 "@name": "Category",
-                "value": "Walking"
+                "value": "Moving"
               },
               {
                 "@name": "Distance",
-                "value": "377"
+                "value": "349"
               }
             ]
           },
-          "description": " Walking from 2017-11-23T17:42:43.387Z to 2017-11-23T17:45:32.969Z. Distance 377m ",
+          "description": " Moving from 2017-11-22T13:48:17.309Z to 2017-11-22T13:49:47.309Z. Distance 349m ",
           "Point": {
             "coordinates": ""
           },
@@ -270,17 +150,17 @@
               "#text": "clampToGround"
             },
             "gx:coord": [
-              "-79.39372032996259 43.68814398835834 0",
-              "-79.39372032996259 43.68814398835834 0",
-              "-79.3934709 43.6872553 0",
-              "-79.3967211 43.6873638 0",
+              "-79.39322326541455 43.686219445741614 0",
+              "-79.39322326541455 43.686219445741614 0",
+              "-79.3932166 43.6862854 0",
+              "-79.3961302 43.6876007 0",
               "-79.3967758 43.6872312 0",
               "-79.3967758 43.6872312 0"
             ]
           },
           "TimeSpan": {
-            "begin": "2017-11-23T17:42:43.387Z",
-            "end": "2017-11-23T17:45:32.969Z"
+            "begin": "2017-11-22T13:48:17.309Z",
+            "end": "2017-11-22T13:49:47.309Z"
           }
         },
         {
@@ -302,7 +182,7 @@
               }
             ]
           },
-          "description": " Consultant from 2017-11-23T17:45:32.969Z to 2017-11-23T23:05:53.024Z. Distance 0m ",
+          "description": " Consultant from 2017-11-22T13:49:47.309Z to 2017-11-22T22:42:54.498Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -314,85 +194,8 @@
             "gx:coord": "-79.3967758 43.6872312 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-23T17:45:32.969Z",
-            "end": "2017-11-23T23:05:53.024Z"
-          }
-        },
-        {
-          "name": "Walking",
-          "address": "",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": "Walking"
-              },
-              {
-                "@name": "Distance",
-                "value": "591"
-              }
-            ]
-          },
-          "description": " Walking from 2017-11-23T23:05:53.024Z to 2017-11-23T23:10:02.000Z. Distance 591m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": [
-              "-79.3967758 43.6872312 0",
-              "-79.3967758 43.6872312 0",
-              "-79.3968141 43.6873307 0",
-              "-79.3937107 43.6873138 0",
-              "-79.3916563 43.6847358 0",
-              "-79.3916563 43.6847358 0"
-            ]
-          },
-          "TimeSpan": {
-            "begin": "2017-11-23T23:05:53.024Z",
-            "end": "2017-11-23T23:10:02.000Z"
-          }
-        },
-        {
-          "name": "Home",
-          "address": "7 Jackes Ave, Toronto, ON M4T 1E3",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": ""
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": "  from 2017-11-23T23:10:02.000Z to 2017-11-24T14:46:15.162Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.3916563 43.6847358 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-23T23:10:02.000Z",
-            "end": "2017-11-24T14:46:15.162Z"
+            "begin": "2017-11-22T13:49:47.309Z",
+            "end": "2017-11-22T22:42:54.498Z"
           }
         }
       ]

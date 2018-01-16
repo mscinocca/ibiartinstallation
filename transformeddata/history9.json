@@ -7,7 +7,7 @@
     "@xmlns": "http://www.opengis.net/kml/2.2",
     "@xmlns:gx": "http://www.google.com/kml/ext/2.2",
     "Document": {
-      "name": " Location history from 2017-11-25 to 2017-11-25 ",
+      "name": " Location history from 2017-11-24 to 2017-11-24 ",
       "open": "1",
       "description": "",
       "StyleMap": {
@@ -70,7 +70,7 @@
               }
             ]
           },
-          "description": "  from 2017-11-25T00:53:26.991Z to 2017-11-25T17:51:37.368Z. Distance 0m ",
+          "description": "  from 2017-11-23T23:10:02.000Z to 2017-11-24T14:46:15.162Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -82,12 +82,12 @@
             "gx:coord": "-79.3916563 43.6847358 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-25T00:53:26.991Z",
-            "end": "2017-11-25T17:51:37.368Z"
+            "begin": "2017-11-23T23:10:02.000Z",
+            "end": "2017-11-24T14:46:15.162Z"
           }
         },
         {
-          "name": "On a tram",
+          "name": "Walking",
           "address": "",
           "ExtendedData": {
             "Data": [
@@ -97,15 +97,15 @@
               },
               {
                 "@name": "Category",
-                "value": "On a tram"
+                "value": "Walking"
               },
               {
                 "@name": "Distance",
-                "value": "5212"
+                "value": "568"
               }
             ]
           },
-          "description": " On a tram from 2017-11-25T17:51:37.368Z to 2017-11-25T18:11:48.498Z. Distance 5212m ",
+          "description": " Walking from 2017-11-24T14:46:15.162Z to 2017-11-24T14:52:45.664Z. Distance 568m ",
           "Point": {
             "coordinates": ""
           },
@@ -117,27 +117,20 @@
             "gx:coord": [
               "-79.3916563 43.6847358 0",
               "-79.3916563 43.6847358 0",
-              "-79.3916999 43.6844314 0",
-              "-79.4004492 43.6841884 0",
-              "-79.4010531 43.6863361 0",
-              "-79.4096013 43.6849431 0",
-              "-79.4130936 43.6865671 0",
-              "-79.4179599 43.6822513 0",
-              "-79.425799 43.679891 0",
-              "-79.4354517 43.6779955 0",
-              "-79.4487016 43.6766206 0",
-              "-79.4486416 43.6765435 0",
-              "-79.4486416 43.6765435 0"
+              "-79.3921902 43.685514 0",
+              "-79.3957627 43.687691 0",
+              "-79.3967758 43.6872312 0",
+              "-79.3967758 43.6872312 0"
             ]
           },
           "TimeSpan": {
-            "begin": "2017-11-25T17:51:37.368Z",
-            "end": "2017-11-25T18:11:48.498Z"
+            "begin": "2017-11-24T14:46:15.162Z",
+            "end": "2017-11-24T14:52:45.664Z"
           }
         },
         {
-          "name": "Tre Mari Bakery",
-          "address": "1311 St Clair Ave W, Toronto, ON M6E 1C2",
+          "name": "IBI Group",
+          "address": "55 St Clair Ave W #700, Toronto, ON M4V 2Y7",
           "ExtendedData": {
             "Data": [
               {
@@ -146,7 +139,7 @@
               },
               {
                 "@name": "Category",
-                "value": "Bakery"
+                "value": "Consultant"
               },
               {
                 "@name": "Distance",
@@ -154,7 +147,7 @@
               }
             ]
           },
-          "description": " Bakery from 2017-11-25T18:11:48.498Z to 2017-11-25T19:23:19.668Z. Distance 0m ",
+          "description": " Consultant from 2017-11-24T14:52:45.664Z to 2017-11-24T17:24:34.091Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -163,15 +156,50 @@
               "@xmlns": "http://www.opengis.net/kml/2.2",
               "#text": "clampToGround"
             },
-            "gx:coord": "-79.4486416 43.6765435 0"
+            "gx:coord": "-79.3967758 43.6872312 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-25T18:11:48.498Z",
-            "end": "2017-11-25T19:23:19.668Z"
+            "begin": "2017-11-24T14:52:45.664Z",
+            "end": "2017-11-24T17:24:34.091Z"
           }
         },
         {
-          "name": "Driving",
+          "name": "Deer Park",
+          "address": "Toronto, ON",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2017-11-24T17:25:19.091Z to 2017-11-24T18:43:52.300Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.398642 43.6898373 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-11-24T17:25:19.091Z",
+            "end": "2017-11-24T18:43:52.300Z"
+          }
+        },
+        {
+          "name": "Walking",
           "address": "",
           "ExtendedData": {
             "Data": [
@@ -181,15 +209,15 @@
               },
               {
                 "@name": "Category",
-                "value": "Driving"
+                "value": "Walking"
               },
               {
                 "@name": "Distance",
-                "value": "5077"
+                "value": "390"
               }
             ]
           },
-          "description": " Driving from 2017-11-25T19:23:19.668Z to 2017-11-25T19:48:13.331Z. Distance 5077m ",
+          "description": " Walking from 2017-11-24T18:43:52.300Z to 2017-11-24T18:45:22.300Z. Distance 390m ",
           "Point": {
             "coordinates": ""
           },
@@ -199,25 +227,95 @@
               "#text": "clampToGround"
             },
             "gx:coord": [
-              "-79.4486416 43.6765435 0",
-              "-79.4486416 43.6765435 0",
-              "-79.44877 43.6766474 0",
-              "-79.4476899 43.6752838 0",
-              "-79.4462271 43.6745939 0",
-              "-79.4415933 43.6743568 0",
-              "-79.4314929 43.6748134 0",
-              "-79.4165668 43.676709 0",
-              "-79.4074348 43.6776088 0",
-              "-79.4030024 43.6791558 0",
-              "-79.398613 43.6838451 0",
-              "-79.3918453 43.6845759 0",
+              "-79.39363202628543 43.68780134918779 0",
+              "-79.39363202628543 43.68780134918779 0",
+              "-79.3944034 43.6887905 0",
+              "-79.3966664 43.6875399 0",
+              "-79.3967758 43.6872312 0",
+              "-79.3967758 43.6872312 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-11-24T18:43:52.300Z",
+            "end": "2017-11-24T18:45:22.300Z"
+          }
+        },
+        {
+          "name": "IBI Group",
+          "address": "55 St Clair Ave W #700, Toronto, ON M4V 2Y7",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Consultant"
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": " Consultant from 2017-11-24T18:45:22.300Z to 2017-11-25T00:47:59.979Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.3967758 43.6872312 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-11-24T18:45:22.300Z",
+            "end": "2017-11-25T00:47:59.979Z"
+          }
+        },
+        {
+          "name": "Walking",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "melikesolenakin@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Walking"
+              },
+              {
+                "@name": "Distance",
+                "value": "643"
+              }
+            ]
+          },
+          "description": " Walking from 2017-11-25T00:47:59.979Z to 2017-11-25T00:53:26.991Z. Distance 643m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.3967758 43.6872312 0",
+              "-79.3967758 43.6872312 0",
+              "-79.3969351 43.6873012 0",
+              "-79.3937881 43.6870976 0",
+              "-79.3916999 43.6844314 0",
               "-79.3916563 43.6847358 0",
               "-79.3916563 43.6847358 0"
             ]
           },
           "TimeSpan": {
-            "begin": "2017-11-25T19:23:19.668Z",
-            "end": "2017-11-25T19:48:13.331Z"
+            "begin": "2017-11-25T00:47:59.979Z",
+            "end": "2017-11-25T00:53:26.991Z"
           }
         },
         {
@@ -239,7 +337,7 @@
               }
             ]
           },
-          "description": "  from 2017-11-25T19:48:13.331Z to 2017-11-26T20:01:50.222Z. Distance 0m ",
+          "description": "  from 2017-11-25T00:53:26.991Z to 2017-11-25T17:51:37.368Z. Distance 0m ",
           "Point": {
             "coordinates": ""
           },
@@ -251,8 +349,8 @@
             "gx:coord": "-79.3916563 43.6847358 0"
           },
           "TimeSpan": {
-            "begin": "2017-11-25T19:48:13.331Z",
-            "end": "2017-11-26T20:01:50.222Z"
+            "begin": "2017-11-25T00:53:26.991Z",
+            "end": "2017-11-25T17:51:37.368Z"
           }
         }
       ]

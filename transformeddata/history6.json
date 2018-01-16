@@ -1,13 +1,9 @@
 {
-  "?xml": {
-    "@version": "1.0",
-    "@encoding": "UTF-8"
-  },
   "kml": {
     "@xmlns": "http://www.opengis.net/kml/2.2",
     "@xmlns:gx": "http://www.google.com/kml/ext/2.2",
     "Document": {
-      "name": " Location history from 2017-11-22 to 2017-11-22 ",
+      "name": " Location history from 2017-11-20 to 2017-11-20 ",
       "open": "1",
       "description": "",
       "StyleMap": {
@@ -52,95 +48,60 @@
       ],
       "Placemark": [
         {
-          "name": "Summerhill",
-          "address": "Toronto, ON",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": ""
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": "  from 2017-11-22T00:07:39.432Z to 2017-11-22T13:42:01.819Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.3944199 43.6811436 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-22T00:07:39.432Z",
-            "end": "2017-11-22T13:42:01.819Z"
-          }
-        },
-        {
-          "name": "Deer Park",
-          "address": "Toronto, ON",
-          "ExtendedData": {
-            "Data": [
-              {
-                "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
-              },
-              {
-                "@name": "Category",
-                "value": ""
-              },
-              {
-                "@name": "Distance",
-                "value": "0"
-              }
-            ]
-          },
-          "description": "  from 2017-11-22T13:42:58.961Z to 2017-11-22T13:48:17.309Z. Distance 0m ",
-          "Point": {
-            "coordinates": ""
-          },
-          "gx:Track": {
-            "altitudeMode": {
-              "@xmlns": "http://www.opengis.net/kml/2.2",
-              "#text": "clampToGround"
-            },
-            "gx:coord": "-79.398642 43.6898373 0"
-          },
-          "TimeSpan": {
-            "begin": "2017-11-22T13:42:58.961Z",
-            "end": "2017-11-22T13:48:17.309Z"
-          }
-        },
-        {
-          "name": "Moving",
+          "name": "Home",
           "address": "",
           "ExtendedData": {
             "Data": [
               {
                 "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
+                "value": "mscinocca@gmail.com"
               },
               {
                 "@name": "Category",
-                "value": "Moving"
+                "value": ""
               },
               {
                 "@name": "Distance",
-                "value": "349"
+                "value": "0"
               }
             ]
           },
-          "description": " Moving from 2017-11-22T13:48:17.309Z to 2017-11-22T13:49:47.309Z. Distance 349m ",
+          "description": "  from 2017-11-19T22:25:20.451Z to 2017-11-20T13:43:40.462Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.4821374 43.671441 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-11-19T22:25:20.451Z",
+            "end": "2017-11-20T13:43:40.462Z"
+          }
+        },
+        {
+          "name": "Walking",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "mscinocca@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Walking"
+              },
+              {
+                "@name": "Distance",
+                "value": "1561"
+              }
+            ]
+          },
+          "description": " Walking from 2017-11-20T13:43:40.462Z to 2017-11-20T13:58:54.900Z. Distance 1561m ",
           "Point": {
             "coordinates": ""
           },
@@ -150,39 +111,51 @@
               "#text": "clampToGround"
             },
             "gx:coord": [
-              "-79.39322326541455 43.686219445741614 0",
-              "-79.39322326541455 43.686219445741614 0",
-              "-79.3932166 43.6862854 0",
-              "-79.3961302 43.6876007 0",
-              "-79.3967758 43.6872312 0",
-              "-79.3967758 43.6872312 0"
+              "-79.4821374 43.671441 0",
+              "-79.4821374 43.671441 0",
+              "-79.4820751 43.6714597 0",
+              "-79.4801043 43.6715414 0",
+              "-79.480243 43.6704691 0",
+              "-79.4794626 43.669905 0",
+              "-79.4778317 43.6702296 0",
+              "-79.4770925 43.6704629 0",
+              "-79.4762097 43.6707717 0",
+              "-79.4749331 43.6710545 0",
+              "-79.4726466 43.6714611 0",
+              "-79.4720395 43.6717342 0",
+              "-79.4719902 43.671873 0",
+              "-79.4719902 43.671873 0",
+              "-79.4678786 43.6726742 0",
+              "-79.4671267 43.6726093 0",
+              "-79.4655074 43.6729505 0",
+              "-79.4655074 43.6729505 0"
             ]
           },
           "TimeSpan": {
-            "begin": "2017-11-22T13:48:17.309Z",
-            "end": "2017-11-22T13:49:47.309Z"
+            "begin": "2017-11-20T13:43:40.462Z",
+            "end": "2017-11-20T13:58:54.900Z"
           }
         },
         {
-          "name": "IBI Group",
-          "address": "55 St Clair Ave W #700, Toronto, ON M4V 2Y7",
+          "name": "On a tram",
+          "address": "",
           "ExtendedData": {
             "Data": [
               {
                 "@name": "Email",
-                "value": "melikesolenakin@gmail.com"
+                "value": "mscinocca@gmail.com"
               },
               {
                 "@name": "Category",
-                "value": "Consultant"
+                "value": "On a tram"
               },
               {
                 "@name": "Distance",
-                "value": "0"
+                "value": "5744"
               }
             ]
           },
-          "description": " Consultant from 2017-11-22T13:49:47.309Z to 2017-11-22T22:42:54.498Z. Distance 0m ",
+          "description": " On a tram from 2017-11-20T13:58:54.900Z to 2017-11-20T14:29:08.469Z. Distance 5744m ",
           "Point": {
             "coordinates": ""
           },
@@ -191,11 +164,251 @@
               "@xmlns": "http://www.opengis.net/kml/2.2",
               "#text": "clampToGround"
             },
-            "gx:coord": "-79.3967758 43.6872312 0"
+            "gx:coord": [
+              "-79.4655074 43.6729505 0",
+              "-79.4655074 43.6729505 0",
+              "-79.4651766 43.6730429 0",
+              "-79.4633851 43.6734406 0",
+              "-79.4617987 43.6738307 0",
+              "-79.4597336 43.6743523 0",
+              "-79.4574179 43.6747559 0",
+              "-79.4547452 43.6753295 0",
+              "-79.4533341 43.6757249 0",
+              "-79.4505858 43.6761539 0",
+              "-79.4471032 43.6769201 0",
+              "-79.4427322 43.6779687 0",
+              "-79.4420207 43.6780887 0",
+              "-79.4410624 43.678312 0",
+              "-79.4371676 43.6791582 0",
+              "-79.4371676 43.6791582 0",
+              "-79.4321335 43.6802964 0",
+              "-79.4231811 43.6822322 0",
+              "-79.4231811 43.6822322 0",
+              "-79.4231811 43.6822322 0",
+              "-79.4231811 43.6822322 0",
+              "-79.4191871 43.6829882 0",
+              "-79.4191871 43.6829882 0",
+              "-79.39685553320018 43.687106483736876 0",
+              "-79.39685553320018 43.687106483736876 0"
+            ]
           },
           "TimeSpan": {
-            "begin": "2017-11-22T13:49:47.309Z",
-            "end": "2017-11-22T22:42:54.498Z"
+            "begin": "2017-11-20T13:58:54.900Z",
+            "end": "2017-11-20T14:29:08.469Z"
+          }
+        },
+        {
+          "name": "55 St Clair Ave W",
+          "address": "Toronto, ON M4V 1N5",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "mscinocca@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2017-11-20T14:29:08.469Z to 2017-11-20T23:35:32.337Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.39665169999999 43.6872261 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-11-20T14:29:08.469Z",
+            "end": "2017-11-20T23:35:32.337Z"
+          }
+        },
+        {
+          "name": "On a tram",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "mscinocca@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "On a tram"
+              },
+              {
+                "@name": "Distance",
+                "value": "1385"
+              }
+            ]
+          },
+          "description": " On a tram from 2017-11-20T23:35:32.337Z to 2017-11-20T23:42:16.873Z. Distance 1385m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.39685553320018 43.687106483736876 0",
+              "-79.39685553320018 43.687106483736876 0",
+              "-79.3982902 43.6871295 0",
+              "-79.3985191 43.6871341 0",
+              "-79.4010196 43.686636 0",
+              "-79.4045686 43.6860617 0",
+              "-79.4113818 43.6847359 0",
+              "-79.4133549 43.6842627 0",
+              "-79.41341630589396 43.68412035547781 0",
+              "-79.41341630589396 43.68412035547781 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-11-20T23:35:32.337Z",
+            "end": "2017-11-20T23:42:16.873Z"
+          }
+        },
+        {
+          "name": "Forest Hill South",
+          "address": "Toronto, ON",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "mscinocca@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2017-11-20T23:42:16.873Z to 2017-11-20T23:46:51.700Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.4169356 43.6927315 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-11-20T23:42:16.873Z",
+            "end": "2017-11-20T23:46:51.700Z"
+          }
+        },
+        {
+          "name": "Moving",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "mscinocca@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": "Moving"
+              },
+              {
+                "@name": "Distance",
+                "value": "5928"
+              }
+            ]
+          },
+          "description": " Moving from 2017-11-20T23:46:51.700Z to 2017-11-21T00:23:52.597Z. Distance 5928m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": [
+              "-79.41341630589396 43.68412035547781 0",
+              "-79.41341630589396 43.68412035547781 0",
+              "-79.4196652 43.6832729 0",
+              "-79.4195026 43.6831556 0",
+              "-79.4210385 43.682761 0",
+              "-79.4235885 43.6823361 0",
+              "-79.4291045 43.6811755 0",
+              "-79.4305627 43.6807597 0",
+              "-79.4331047 43.6801903 0",
+              "-79.4354037 43.6796687 0",
+              "-79.4352123 43.6799719 0",
+              "-79.4429684 43.6779304 0",
+              "-79.4428808 43.6779845 0",
+              "-79.4434272 43.6777802 0",
+              "-79.4557096 43.6751728 0",
+              "-79.4604344 43.6741783 0",
+              "-79.4632478 43.673515 0",
+              "-79.469027 43.6723005 0",
+              "-79.4718583 43.6718354 0",
+              "-79.4735913 43.6712713 0",
+              "-79.4749921 43.6709742 0",
+              "-79.4761951 43.6708135 0",
+              "-79.4791534 43.6700092 0",
+              "-79.4804065 43.6709513 0",
+              "-79.4819744 43.6714775 0",
+              "-79.4821374 43.671441 0",
+              "-79.4821374 43.671441 0"
+            ]
+          },
+          "TimeSpan": {
+            "begin": "2017-11-20T23:46:51.700Z",
+            "end": "2017-11-21T00:23:52.597Z"
+          }
+        },
+        {
+          "name": "Home",
+          "address": "",
+          "ExtendedData": {
+            "Data": [
+              {
+                "@name": "Email",
+                "value": "mscinocca@gmail.com"
+              },
+              {
+                "@name": "Category",
+                "value": ""
+              },
+              {
+                "@name": "Distance",
+                "value": "0"
+              }
+            ]
+          },
+          "description": "  from 2017-11-21T00:23:52.597Z to 2017-11-21T03:19:29.820Z. Distance 0m ",
+          "Point": {
+            "coordinates": ""
+          },
+          "gx:Track": {
+            "altitudeMode": {
+              "@xmlns": "http://www.opengis.net/kml/2.2",
+              "#text": "clampToGround"
+            },
+            "gx:coord": "-79.4821374 43.671441 0"
+          },
+          "TimeSpan": {
+            "begin": "2017-11-21T00:23:52.597Z",
+            "end": "2017-11-21T03:19:29.820Z"
           }
         }
       ]
