@@ -124,7 +124,7 @@ function init() {
   var mesh = new THREE.Mesh( geometry, material );
   scene.add( mesh );
 
-  renderer = new THREE.WebGLRenderer();
+  renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setSize(width, height);
 
   container.appendChild( renderer.domElement );
@@ -361,10 +361,21 @@ function animate( timestamp ) {
                    Math.abs(trips[currentTripIndex].movedDeltaY) < Math.abs(trips[currentTripIndex].deltaY) &&
                    !skip) {
 
-                  var maxFactor = 0.0005;
+                  var maxFactor = 0.3;
                   var minFactor = 0;
                 
                   var boxSize = 2.0;
+
+                  var perpendicularX = -trips[currentTripIndex].moveDeltaY;
+                  var perpendicularY = trips[currentTripIndex].moveDeltaX;
+
+                  if(perpendicularX == 0) {
+                    perpendicularY = 1;
+                  }
+
+                  if(perpendicularY == 0) {
+                    perpendicularX = 1;
+                  }
 
                   for(var xx = trips[currentTripIndex].xPos - boxSize; xx <= trips[currentTripIndex].xPos + boxSize; xx++) {
                     for(var yy = trips[currentTripIndex].yPos - boxSize; yy <= trips[currentTripIndex].yPos + boxSize; yy++) {
@@ -372,19 +383,38 @@ function animate( timestamp ) {
                       var distance = Math.sqrt(Math.abs(xx - trips[currentTripIndex].xPos) * Math.abs(xx - trips[currentTripIndex].xPos) + Math.abs(yy - trips[currentTripIndex].yPos) * Math.abs(yy - trips[currentTripIndex].yPos));
                       var factor = (minFactor - maxFactor) / boxSize * distance + maxFactor;
 
-                      if(factor > minFactor)
-                        setDataBufferColorInfo(xx, yy, 255, 255, 255, 100 * factor);
+                      if(factor > minFactor) {
+                        setDataBufferColorInfo(xx, yy, 255, 255, 255, 255 * factor);
+                        setDataBufferColorInfo(xx - perpendicularX * 3, yy - perpendicularY * 3, 255, 255, 255, 255 * factor * 0.5);
+                        setDataBufferColorInfo(xx + perpendicularX * 3, yy + perpendicularY * 3, 255, 255, 255, 255 * factor * 0.7);
+                        setDataBufferColorInfo(xx - perpendicularX * 6, yy - perpendicularY * 6, 255, 255, 255, 255 * factor * 0.8);
+                        setDataBufferColorInfo(xx + perpendicularX * 6, yy + perpendicularY * 6, 255, 255, 255, 255 * factor * 0.2);
+                      }
                     }
                   }
+                  
+
+                  var perpendicularX = -trips[currentTripIndex].moveDeltaY;
+                  var perpendicularY = trips[currentTripIndex].moveDeltaX;
+
+                  if(perpendicularX == 0) {
+                    perpendicularY = 1;
+                  }
+
+                  //setDataBufferColorInfo(trips[currentTripIndex].xPos - perpendicularX * 3, trips[currentTripIndex].yPos - perpendicularY * 3, 255, 255, 255, 255);
+                  //setDataBufferColorInfo(trips[currentTripIndex].xPos - trips[currentTripIndex].moveDeltaY * 1, trips[currentTripIndex].yPos + trips[currentTripIndex].moveDeltaX * 1, 255, 255, 255, 50);
+                  //setDataBufferColorInfo(trips[currentTripIndex].xPos, trips[currentTripIndex].yPos, 255, 255, 255, 255);
+                  //setDataBufferColorInfo(trips[currentTripIndex].xPos + trips[currentTripIndex].moveDeltaY * 1, trips[currentTripIndex].yPos - trips[currentTripIndex].moveDeltaX * 1, 255, 255, 255, 70);
+                  //setDataBufferColorInfo(trips[currentTripIndex].xPos + perpendicularX * 3, trips[currentTripIndex].yPos + perpendicularY * 3, 255, 255, 255, 255);
 
                   if(Math.abs(trips[currentTripIndex].movedDeltaX) < Math.abs(trips[currentTripIndex].deltaX)) {
-                    trips[currentTripIndex].xPos += trips[currentTripIndex].moveDeltaX * boxSize / 2.0;
-                    trips[currentTripIndex].movedDeltaX += trips[currentTripIndex].moveDeltaX * boxSize / 2.0;
+                    trips[currentTripIndex].xPos += trips[currentTripIndex].moveDeltaX;
+                    trips[currentTripIndex].movedDeltaX += trips[currentTripIndex].moveDeltaX;
                   }
 
                   if(Math.abs(trips[currentTripIndex].movedDeltaY) < Math.abs(trips[currentTripIndex].deltaY)) {
-                    trips[currentTripIndex].yPos += trips[currentTripIndex].moveDeltaY * boxSize / 2.0;
-                    trips[currentTripIndex].movedDeltaY += trips[currentTripIndex].moveDeltaY * boxSize / 2.0;
+                    trips[currentTripIndex].yPos += trips[currentTripIndex].moveDeltaY;
+                    trips[currentTripIndex].movedDeltaY += trips[currentTripIndex].moveDeltaY;
                   }
 
                   uniforms.currentXPosition.value = trips[currentTripIndex].xPos;

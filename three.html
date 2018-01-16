@@ -119,136 +119,32 @@
 
 				float spacer = 8.0;
 
+				gl_FragColor.r = bgr / 255.0;
+				gl_FragColor.g = bgg / 255.0;
+				gl_FragColor.b = bgb / 255.0;
+				gl_FragColor.a = bga / 255.0;
+
 				/*
-				if(mod(floor(gl_FragCoord.y), spacer) == 0.0 || 
-					mod(floor(gl_FragCoord.y - 1.0), spacer) == 0.0 ||
-					mod(floor(gl_FragCoord.y - 2.0), spacer) == 0.0 ||
-					mod(floor(gl_FragCoord.y + 1.0), spacer) == 0.0 ||
-					mod(floor(gl_FragCoord.y + 2.0), spacer) == 0.0) {
+				gl_FragColor.r += textureColor.r;
+				gl_FragColor.g += textureColor.g;
+				gl_FragColor.b += textureColor.b;
+				gl_FragColor.a += textureColor.a;
+				*/
 
-					float nominalAlpha = 1.0;
+				float srcA = textureColor.a;
+				float dstA = gl_FragColor.a;
 
-					float lineXPosition = xPosition;
+				gl_FragColor.a = srcA + dstA * (1.0 - srcA);
+				gl_FragColor.rgb = ((textureColor.rgb * srcA) + (gl_FragColor.rgb * dstA * (1.0 - srcA))) / gl_FragColor.a;
 
-					if(gl_FragCoord.x < lineXPosition) {
-						nominalAlpha = -1.0 / lineXPosition * abs(lineXPosition - gl_FragCoord.x) + 1.0;
-					} else if(gl_FragCoord.x > lineXPosition) {
-						nominalAlpha = -1.0 / (1920.0 - lineXPosition) * abs(lineXPosition - gl_FragCoord.x) + 1.0;
-					} else {
-						nominalAlpha = 1.0;
-					}
+				float distance = sqrt(abs(vUv.x - currentXPosition / 1920.0) * abs(vUv.x - currentXPosition / 1920.0) + abs(vUv.y - currentYPosition / 1080.0) * 1080.0 / 1920.0 * abs(vUv.y - currentYPosition / 1080.0) * 1080.0 / 1920.0 );
 
-					nominalAlpha = nominalAlpha * nominalAlpha * 0.5;
-					
-					gl_FragColor = vec4(
-						1.0,
-						1.0, 
-						1.0,
-						nominalAlpha);
+				if(distance <= 0.004) {
+					gl_FragColor.r = 1.0;
+					gl_FragColor.g = 1.0;
+					gl_FragColor.b = 1.0;
+					gl_FragColor.a = 1.0;
 				}
-
-				if(mod(floor(gl_FragCoord.x), spacer) == 0.0 || 
-					mod(floor(gl_FragCoord.x - 1.0), spacer) == 0.0 ||
-					mod(floor(gl_FragCoord.x - 2.0), spacer) == 0.0 ||
-					mod(floor(gl_FragCoord.x + 1.0), spacer) == 0.0 ||
-					mod(floor(gl_FragCoord.x + 2.0), spacer) == 0.0) {
-
-						float nominalAlpha = 1.0;
-
-						float lineYPosition = yPosition;
-
-						if(gl_FragCoord.y < lineYPosition) {
-							nominalAlpha = -1.0 / lineYPosition * abs(lineYPosition - gl_FragCoord.y) + 1.0;
-						} else if(gl_FragCoord.y > lineYPosition) {
-							nominalAlpha = -1.0 / (1080.0 - lineYPosition) * abs(lineYPosition - gl_FragCoord.y) + 1.0;
-						} else {
-							nominalAlpha = 1.0;
-						}
-	
-						nominalAlpha = nominalAlpha * nominalAlpha * 0.5;
-						
-						gl_FragColor = vec4(
-							1.0,
-							1.0, 
-							1.0,
-							gl_FragColor.a + nominalAlpha);
-				}
-*/
-
-				/*if(
-				(mod(floor(gl_FragCoord.x), spacer) == 0.0 || 
-				mod(floor(gl_FragCoord.x - 1.0), spacer) == 0.0 ||
-				mod(floor(gl_FragCoord.x - 2.0), spacer) == 0.0 ||
-				mod(floor(gl_FragCoord.x + 1.0), spacer) == 0.0 ||
-				mod(floor(gl_FragCoord.x + 2.0), spacer) == 0.0) &&
-				(mod(floor(gl_FragCoord.y), spacer) == 0.0 || 
-				mod(floor(gl_FragCoord.y - 1.0), spacer) == 0.0 ||
-				mod(floor(gl_FragCoord.y - 2.0), spacer) == 0.0 ||
-				mod(floor(gl_FragCoord.y + 1.0), spacer) == 0.0 ||
-				mod(floor(gl_FragCoord.y + 2.0), spacer) == 0.0)) {*/
-
-					/*
-					if(textureColor.r == 0.0) {
-						//gl_FragColor.rbg = vec3(1.0, 1.0, 1.0);
-						//gl_FragColor.a = 1.0;
-					} else {
-						if(textureColor.r == 1.0 / 255.0) {
-							gl_FragColor.r = 1.0;
-							gl_FragColor.g = 1.0;
-							gl_FragColor.b = 1.0;
-						} else if(textureColor.r == 2.0 / 255.0) {
-							gl_FragColor.r = 0.2;
-							gl_FragColor.g = 0.8;
-							gl_FragColor.b = 1.0;
-						} else if(textureColor.r == 3.0 / 255.0) {
-							gl_FragColor.r = 1.0;
-							gl_FragColor.g = 0.0;
-							gl_FragColor.b = 0.0;
-						} else if(textureColor.r == 4.0 / 255.0) {
-							gl_FragColor.r = 0.1;
-							gl_FragColor.g = 0.0;
-							gl_FragColor.b = 1.0;
-						}
-						*/
-
-						gl_FragColor.r = bgr / 255.0;
-						gl_FragColor.g = bgg / 255.0;
-						gl_FragColor.b = bgb / 255.0;
-						gl_FragColor.a = bga / 255.0;
-
-						gl_FragColor.r += textureColor.r;
-						gl_FragColor.g += textureColor.g;
-						gl_FragColor.b += textureColor.b;
-						gl_FragColor.a += textureColor.a;
-
-						/*
-						if(textureColor.a > 0.0)
-							gl_FragColor = textureColor; //gl_FragColor.a * 3.0;
-						else {
-							gl_FragColor.r = bgr / 255.0;
-							gl_FragColor.g = bgg / 255.0;
-							gl_FragColor.b = bgb / 255.0;
-							gl_FragColor.a = bga / 255.0;
-						}
-						*/
-
-						float distance = sqrt(abs(vUv.x - currentXPosition / 1920.0) * abs(vUv.x - currentXPosition / 1920.0) + abs(vUv.y - currentYPosition / 1080.0) * 1080.0 / 1920.0 * abs(vUv.y - currentYPosition / 1080.0) * 1080.0 / 1920.0 );
-
-						if(distance <= 0.0025) {
-							gl_FragColor.r = 1.0;
-							gl_FragColor.g = 1.0;
-							gl_FragColor.b = 1.0;
-							gl_FragColor.a = 1.0;
-						}
-
-					//}
-
-					/*
-					if(textureColor.g > 0.0 && textureColor.g < (pathIndex / 255.0 - 0.5 / 255.0)) {
-						gl_FragColor.a = max(0.6, textureColor.a * 0.6);
-					}
-					*/
-				//}
 			}
 		</script>
 	</body>
